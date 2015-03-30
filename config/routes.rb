@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
-  resources :users
+  # Generate 6/7 routes for users. Use root/signup 
+  # instead users#new
+  resources :users, :except => ["new"]
+  get '/signup'=> 'users#new', :as => 'signup'
 
   resources :bands
-
+  # Landing page allow users to add bands to their
+  # tracked bands
+  root 'bands#new'
   resources :events
 
   # The priority is based upon order of creation: first created -> highest priority.
