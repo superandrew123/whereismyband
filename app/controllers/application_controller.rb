@@ -3,9 +3,25 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+
+  private 
+
   def log_in(user)
     # Creates a key on session called :user_id
     # and a value of the user account's id.
     session[:user_id] = user.id
   end
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id].present?
+  end
+
+  helper_method :current_user
+
+  def logged_in?
+    !!current_user
+  end
+
+  helper_method :logged_in?
+
 end

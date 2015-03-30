@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% flash.each do |name, msg| %>
+   <%= content_tag :div, msg, :id => "flash#{name}" %>
+ <% end %>
+
+ <nav class="list-inline">
+    <li><%= login_or_logout %></li>
+  </nav>
 
 <%= yield %>
 

@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   root 'bands#new'
   resources :events
 
+  get 'login' => 'sessions#new'
+  get 'logout' => 'sessions#destroy'
+  post 'sessions' => 'sessions#create'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
