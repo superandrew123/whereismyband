@@ -1,0 +1,10 @@
+Genre:
+Country : http://www.billboard.com/charts/year-end/2014/top-country-artists
+R&B / Hip Hop : http://www.billboard.com/charts/year-end/2014/top-r-and-b-hip-hop-artists
+Pop :
+Rock : http://www.billboard.com/charts/year-end/2014/top-rock-artists
+Indie
+Dance/electronic : http://www.billboard.com/charts/year-end/2014/top-dance-electronic-artists
+Folk
+Latin : http://www.billboard.com/charts/year-end/2014/top-latin-artists
+Christian/Gospel
