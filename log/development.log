@@ -16222,3 +16222,6 @@ Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for
   [1m[35m (0.2ms)[0m  COMMIT
   [1m[36mBand Load (0.9ms)[0m  [1mSELECT "bands".* FROM "bands"[0m
   [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "bands"
+  [1m[36mBand Load (6.1ms)[0m  [1mSELECT "bands".* FROM "bands"[0m
+  [1m[35mBand Load (0.7ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mEvent Load (2.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."band_id" = $1[0m  [["band_id", 9]]

@@ -24,11 +24,15 @@ ARRAY.each do |letter|
       if artist_fb.category == "Musician/band"
   # before persisting to db make sure artist have a musician/band page
         band = Band.find_or_create_by(name: artist_name)
+        binding.pry
         if artist_fb.events.length > 0
+          binding.pry
           artist_fb.events.each do |event|
+            binding.pry
             show = Event.find_or_create_by(location: event.name, start_time: event.start_time)
             show.link = "http://www.facebook.com/#{artist_slug}/events"
             show.save
+            binding.pry
             band.events.push(show)
           end
         end
