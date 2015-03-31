@@ -1,20 +1,22 @@
 class SessionsController < ApplicationController
   def new
     # Bring's a user to the sign-in form
-    # @user = User.new
+     @user = User.new
 
   end
 
   def create
-    # binding.pry
+
     # Creates the new log-in session
-    @user = User.find_by(email: params[:email]).try(:authenticate, params[:password])
+    @user = User.find_by(email: params[:user][:email]).try(:authenticate, params[:user][:password])
+    # binding.pry
     if @user
       # binding.pry
-      login(@user)
+      log_in(@user)
       redirect_to root_path
     else
       @user = User.new
+      # binding.pry
       flash.now[:notice] = "Please use a valid email/password"
       render :new
     end
@@ -29,7 +31,7 @@ class SessionsController < ApplicationController
     flash[:notice] = "Logged out!"
     redirect_to root_path
 
-    
+
   end
 
   private
