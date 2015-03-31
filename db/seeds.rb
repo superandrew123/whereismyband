@@ -1,6 +1,3 @@
-
-
-
 Band.all.each do |band|
   name = band.name.gsub(" ", "")
   shows = FbGraph::Page.fetch(name, :access_token => ACCESS_TOKEN).events

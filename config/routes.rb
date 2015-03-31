@@ -1,4 +1,4 @@
-Rails.application.attr_reader :attr_namesoutes.draw do
+Rails.application.routes.draw do
   # Generate 6/7 routes for users. Use root/signup
   # instead users#new
   resources :users, :except => ["new"]

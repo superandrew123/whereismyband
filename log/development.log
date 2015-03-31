@@ -9854,3 +9854,239 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 00:44:36 -0400
+
+
+Started GET "/" for ::1 at 2015-03-31 09:04:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered bands/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 165ms (Views: 119.2ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 09:04:51 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered bands/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 09:04:51 -0400
+
+
+Started GET "/logout" for ::1 at 2015-03-31 09:04:53 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 09:04:53 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 09:04:53 -0400
+
+
+Started GET "/login" for ::1 at 2015-03-31 09:04:54 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 77ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 09:04:55 -0400
+
+
+Started POST "/sessions" for ::1 at 2015-03-31 09:04:59 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"akUkX6f5ItHDnnErmp76d/FVrMJMIQVDFOy3umF1tJcBq8IavlNqP0ZbuxpCA6pH+LeW0Niskbd5jm/KhsToBw==", "user"=>{"email"=>"cghazanfar10@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "cghazanfar10@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 122ms (Views: 54.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 09:04:59 -0400
+
+
+Started POST "/sessions" for ::1 at 2015-03-31 09:05:06 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YkIJT28W94RtEOd6qaSw7tt7+YpCiSZx1W9jqq1xc9sJrO8Kdry/aujVLUtxOeDe0pnDmNYEsoW4DbvaSsAvSw==", "user"=>{"email"=>"cghazanfar10@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "cghazanfar10@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 68ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 09:05:06 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered bands/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 09:05:06 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 09:05:06 -0400
