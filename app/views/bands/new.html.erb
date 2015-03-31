@@ -1,0 +1,13 @@
+<%= form_for @band do |f| %>
+<%= f.label :name%>
+<%= f.text_field :name%>
+<%= f.submit "add artist" %>
+<%end%><br><br>
+
+<% if current_user%>
+	<ul>
+		<%@user.bands.each do |band|%>
+	    <li><%=band.name%></li>	
+		<%end%>
+	</ul>
+<%end%>
