@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'figaro'
 gem 'pry'
 gem 'bcrypt'
 gem 'fb_graph'
