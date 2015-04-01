@@ -11,7 +11,8 @@ class BandsController < ApplicationController
     @user = current_user
     @user.bands << @band
     @user.save
-    redirect_to root_path
+    # binding.pry
+
   end
 
 
