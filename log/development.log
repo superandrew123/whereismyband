@@ -31065,3 +31065,2801 @@ Started GET "/assets/band-af5ce8ba81d7cb6957148949c401ad69.js?body=1" for ::1 at
 
 
 Started GET "/assets/application-c920d7b405151b1ba4f2a0ffaaf81250.js?body=1" for ::1 at 2015-04-01 11:21:09 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 11:28:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.8ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.7ms)
+  Rendered bands/new.html.erb within layouts/application (128.8ms)
+Completed 200 OK in 377ms (Views: 231.2ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:28:27 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:27 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:27 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:27 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:28:27 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:27 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:28:27 -0400
+
+
+Started GET "/logout" for ::1 at 2015-04-01 11:28:38 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:28:38 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:39 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:39 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:28:39 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:28:39 -0400
+
+
+Started GET "/signup" for ::1 at 2015-04-01 11:28:41 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:41 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:41 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:28:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:28:41 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:41 -0400
+
+
+Started POST "/users" for ::1 at 2015-04-01 11:28:55 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pfuth+cb9dih4XX6lJ3XLC/I8XGnphw6Bt2F2zfTpLGQNGOOCxlur00QPfzM3fiP62pUhMEQdoO3gglIiFhlMA==", "user"=>{"name"=>"testee", "email"=>"email@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (1.7ms)[0m  BEGIN
+  [1m[36mUser Exists (4.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'testee' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'email@email.com' LIMIT 1
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "testee"], ["email", "email@email.com"], ["password_digest", "$2a$10$0rXALu7pCKKP3XSxZd290ePB0vZKqY.6zayKsJNC6q4hjyOKDRECe"], ["created_at", "2015-04-01 15:28:55.254206"], ["updated_at", "2015-04-01 15:28:55.254206"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/superandrew/flatiron_work/whereismyband/app/controllers/users_controller.rb:13)
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.4ms)
+
+UserMailer#welcome_email: processed outbound mail in 199.2ms
+
+Sent mail to email@email.com (343.1ms)
+Date: Wed, 01 Apr 2015 11:28:55 -0400
+From: sophie.debenedetto@gmail.com
+To: email@email.com
+Message-ID: <551c0eb7777c8_b353ff34803ca5c804a4@Andrews-MacBook-Pro.local.mail>
+Subject: Welcome to our site!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+      <h1>Welcome to example.com, testee</h1>
+    
+    <p>
+      Now you can start adding artists to your list and recieving updates whenever there are new shows!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 668ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:28:55 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (0.9ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 4]]
+  Rendered collection (0.0ms)
+  Rendered bands/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:28:55 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:55 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:55 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:28:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:28:55 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:29:00 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"urQ1gzLJtlUhDc1AknV1E5i21roI5jFFCSzjwNNDz8mPe/uK3sstIs38hUbKNVqwXBRzT25QW/y4c29TbMgOSA==", "band"=>{"name"=>"Adele"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Adele"]]
+  [1m[36mBand Exists (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2[0m  [["user_id", 4], ["id", 157]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["band_id", 157], ["created_at", "2015-04-01 15:29:00.433959"], ["updated_at", "2015-04-01 15:29:00.433959"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/create.html.erb (8.2ms)
+Completed 200 OK in 40ms (Views: 16.3ms | ActiveRecord: 5.2ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mBand Load (1.1ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 4]]
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:29:55 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:29:55 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:29:55 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:29:55 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:30:54 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"urQ1gzLJtlUhDc1AknV1E5i21roI5jFFCSzjwNNDz8mPe/uK3sstIs38hUbKNVqwXBRzT25QW/y4c29TbMgOSA==", "band"=>{"name"=>"Ace of Base"}}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (0.9ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Ace of Base"]]
+  [1m[36mBand Exists (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2[0m  [["user_id", 4], ["id", 138]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["band_id", 138], ["created_at", "2015-04-01 15:30:54.709796"], ["updated_at", "2015-04-01 15:30:54.709796"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (7.9ms)
+Completed 200 OK in 34ms (Views: 19.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:37:49 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (0.6ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 198ms (Views: 118.5ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:37:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:37:50 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:37:50 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:37:55 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fe2hGkPv9rZj+PgZMbscqNzKWGymeiyD705EGFKzL4NIIm8Tr+1twY8JsB9p+zMLGGj9mcDMRjpeEciL7TjuAg==", "band"=>{"name"=>"ME"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (1.2ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "ME"]]
+  Rendered bands/create.html.erb (12.8ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: <%=render @band %>
+  app/views/bands/create.html.erb:1:in `_app_views_bands_create_html_erb___2047753050003539995_70314074466060'
+  app/controllers/bands_controller.rb:15:in `create'
+
+
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (32.2ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.7ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (98.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:39:02 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (0.4ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 87ms (Views: 67.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:39:02 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:39:04 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"95YY78cNi2Ain5xdqiVgq6Tadp1cNYe2xrYxwU3HaCDCWdbmKw8QF85u1FvyZU8IYHjTaDqD7Q936b1S8kypoQ==", "band"=>{"name"=>"ME"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (0.3ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "ME"]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (7.0ms)
+  [1m[36mUserBand Load (0.3ms)[0m  [1mSELECT "user_bands".* FROM "user_bands" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT 1  [["id", 157]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT 1[0m  [["id", 138]]
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "bands" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2015-04-01 15:39:04.815242"], ["updated_at", "2015-04-01 15:39:04.815242"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 4], ["band_id", 307], ["created_at", "2015-04-01 15:39:04.826752"], ["updated_at", "2015-04-01 15:39:04.826752"]]
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (2.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 56ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/bands_controller.rb:26:in `create'
+
+
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (50.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (41.6ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (91.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:41:26 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.7ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 87ms (Views: 65.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:41:26 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 11:41:39 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (1.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:41:39 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:41:43 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Idzw9xJ1kSfDi7lA+t0hwm8mFDXxMnf+o90YN+Hha0MUEz7+/ncKUC968UainQ5hq4SxwJeEHUcSgpSkXmqqwg==", "band"=>{"name"=>"Me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Me"]]
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::AssociationTypeMismatch (Band(#70314107142380) expected, got NilClass(#70314063499840)):
+  app/controllers/bands_controller.rb:19:in `create'
+
+
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (43.7ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (93.9ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:41:47 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Idzw9xJ1kSfDi7lA+t0hwm8mFDXxMnf+o90YN+Hha0MUEz7+/ncKUC968UainQ5hq4SxwJeEHUcSgpSkXmqqwg==", "band"=>{"name"=>"Me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Me"]]
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::AssociationTypeMismatch (Band(#70314107142380) expected, got NilClass(#70314063499840)):
+  app/controllers/bands_controller.rb:19:in `create'
+
+
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (41.8ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (37.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (84.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:42:17 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 93ms (Views: 73.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:42:17 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:42:21 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t3FyuPoQuOUFZObPqVtpfuKyW2DaTkh6kbBTNITT1ZaCvryxFhIjkumVrsnxG0bdJhD+lbz4IsMg79+nO1gUFw==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActiveRecord::AssociationTypeMismatch (Band(#70314081014820) expected, got NilClass(#70314063499840)):
+  app/controllers/bands_controller.rb:22:in `create'
+
+
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (43.0ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (38.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (85.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:43:03 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 84ms (Views: 59.8ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:43:03 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:43:05 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jg8931lwxZT9ODiH0qKBb4wcstFe96L9BzgfzoidZAgTwPPWtXJe4xHJcIGK4q7MSL4XJDhByES2Z5NdNxaliQ==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 500 Internal Server Error in 41230ms
+
+ActiveRecord::AssociationTypeMismatch (Band(#70314106883840) expected, got NilClass(#70314063499840)):
+  app/controllers/bands_controller.rb:23:in `create'
+
+
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (46.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (45.3ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/superandrew/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (102.9ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:45:07 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 91ms (Views: 68.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:45:07 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:45:09 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B9uBJSrRjETO9hQ6PG1YWaZ53WM6qP77pJGInpfS6ZIyFE8sxtMXMyIHXDxkLXf6Ytt4llwelEIVzgQNKFkoEw==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 14358ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:45:23 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B9uBJSrRjETO9hQ6PG1YWaZ53WM6qP77pJGInpfS6ZIyFE8sxtMXMyIHXDxkLXf6Ytt4llwelEIVzgQNKFkoEw==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 4041ms (Views: 10.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:45:28 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B9uBJSrRjETO9hQ6PG1YWaZ53WM6qP77pJGInpfS6ZIyFE8sxtMXMyIHXDxkLXf6Ytt4llwelEIVzgQNKFkoEw==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 2352ms (Views: 8.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:45:41 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 78ms (Views: 71.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:45:41 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 11:46:01 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (1.0ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 81ms (Views: 58.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:46:01 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:46:03 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pMrZxbgNPUf7ZvXvdUwWDK88YNT9prUPJh2JjEKafaSRBRfMVA+mMBeXvektDDmva57FIZsQ37aXQgUf/RG8JQ==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:46:27 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.6ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 80ms (Views: 57.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:46:28 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:46:30 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Czh0lbQqS7+7css4qekbeWTn04GVUBOMqjxly8nwGb0+97qcWCjQyFeDgz7xqTTaoEV2dPPmeTUbY+lYdnvYPA==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:48:04 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 77ms (Views: 55.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/band-88c43c5d9ef5d330f766746ef6f55eef.js?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started GET "/assets/application-59ab287032e893431c11b72ece99ee6e.js?body=1" for ::1 at 2015-04-01 11:48:04 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:48:06 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XEJOPLLvB7/aDmX19OEnRT0HUJ3Vc5RV6oCAzeD5kI1pjYA1Xu2cyDb/LfOsoQjm+aX1aLPF/uxb3wxeX3JRDA==", "band"=>{"name"=>"ME"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "ME"]]
+  Rendered bands/create.html.erb (0.5ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:48:25 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XEJOPLLvB7/aDmX19OEnRT0HUJ3Vc5RV6oCAzeD5kI1pjYA1Xu2cyDb/LfOsoQjm+aX1aLPF/uxb3wxeX3JRDA==", "band"=>{"name"=>"A Few Good Men"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.1ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "A Few Good Men"]]
+  [1m[35mBand Exists (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2  [["user_id", 4], ["id", 96]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 4], ["band_id", 96], ["created_at", "2015-04-01 15:48:25.128710"], ["updated_at", "2015-04-01 15:48:25.128710"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (6.9ms)
+Completed 200 OK in 34ms (Views: 13.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:52:50 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.6ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 129ms (Views: 106.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/band-5cbbb2431d667891929496ffbd6441d7.js?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/assets/application-a839cac1ef2e6b080a4e0d69688ea11d.js?body=1" for ::1 at 2015-04-01 11:52:50 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 11:54:07 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/band-eaf1f93a21306e61a2b668db71f0ff54.js?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/assets/application-2f13f46c8d67c51f293863d928c29aac.js?body=1" for ::1 at 2015-04-01 11:54:07 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 11:54:09 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.6ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/band-eaf1f93a21306e61a2b668db71f0ff54.js?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/application-2f13f46c8d67c51f293863d928c29aac.js?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:09 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 11:54:10 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/band-eaf1f93a21306e61a2b668db71f0ff54.js?body=1" for ::1 at 2015-04-01 11:54:10 -0400
+
+
+Started GET "/assets/application-2f13f46c8d67c51f293863d928c29aac.js?body=1" for ::1 at 2015-04-01 11:54:11 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 11:55:29 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 111ms (Views: 90.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:55:29 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:55:29 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:55:29 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:55:29 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:55:30 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:55:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:55:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:55:30 -0400
+
+
+Started GET "/assets/application-a839cac1ef2e6b080a4e0d69688ea11d.js?body=1" for ::1 at 2015-04-01 11:55:30 -0400
+
+
+Started GET "/assets/band-5cbbb2431d667891929496ffbd6441d7.js?body=1" for ::1 at 2015-04-01 11:55:30 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:55:33 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyqcfDpDsVu7WUZSs4EXjNlmvk4ywYZ9qbBXThBRxxJu5VJ11kEqLFeoDlTrwTgvHcQbu1R37MQY79vdr9oGkw==", "band"=>{"name"=>"ME"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "ME"]]
+  Rendered bands/create.html.erb (0.5ms)
+Completed 200 OK in 9236ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:55:42 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyqcfDpDsVu7WUZSs4EXjNlmvk4ywYZ9qbBXThBRxxJu5VJ11kEqLFeoDlTrwTgvHcQbu1R37MQY79vdr9oGkw==", "band"=>{"name"=>"ME"}}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (2.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "ME"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 3113ms (Views: 8.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:56:00 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 82ms (Views: 58.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/band-5cbbb2431d667891929496ffbd6441d7.js?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started GET "/assets/application-a839cac1ef2e6b080a4e0d69688ea11d.js?body=1" for ::1 at 2015-04-01 11:56:01 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:56:08 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0R7Yayn7dTPAeC5MWA1eYnlS22v+pdDvQX5Xb8moM7nk0RZixfnuRCyJZkoATXHBvfB+npgTulbwIdv8diPyOA==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:56:32 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0R7Yayn7dTPAeC5MWA1eYnlS22v+pdDvQX5Xb8moM7nk0RZixfnuRCyJZkoATXHBvfB+npgTulbwIdv8diPyOA==", "band"=>{"name"=>"Academy of Ancient Music"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Academy of Ancient Music"]]
+  [1m[35mBand Exists (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2  [["user_id", 4], ["id", 133]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 4], ["band_id", 133], ["created_at", "2015-04-01 15:56:32.358044"], ["updated_at", "2015-04-01 15:56:32.358044"]]
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/create.html.erb (9.9ms)
+Completed 200 OK in 49ms (Views: 19.3ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 11:58:19 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 11:58:19 -0400
+
+
+Started GET "/assets/band-4a0c2ca5145c4cf46bf7225b36ae1f66.js?body=1" for ::1 at 2015-04-01 11:58:20 -0400
+
+
+Started GET "/assets/application-46f3bc6dcc7dd7cba17a143bfceb2015.js?body=1" for ::1 at 2015-04-01 11:58:20 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:58:23 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yak/bNMRSxfA2Leqy8WWlhnwle6RQ5ZIqzPfeto5hThUZvFlPxPQYCwp/6yThbk13VIwG/f1/PEabFPpZbJEuQ==", "band"=>{"name"=>"me"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "me"]]
+  Rendered bands/create.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:58:33 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yak/bNMRSxfA2Leqy8WWlhnwle6RQ5ZIqzPfeto5hThUZvFlPxPQYCwp/6yThbk13VIwG/f1/PEabFPpZbJEuQ==", "band"=>{"name"=>"Agalloch"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Agalloch"]]
+  Rendered bands/create.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:58:47 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yak/bNMRSxfA2Leqy8WWlhnwle6RQ5ZIqzPfeto5hThUZvFlPxPQYCwp/6yThbk13VIwG/f1/PEabFPpZbJEuQ==", "band"=>{"name"=>"Agalloch"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.6ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Agalloch"]]
+  Rendered bands/create.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:59:07 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yak/bNMRSxfA2Leqy8WWlhnwle6RQ5ZIqzPfeto5hThUZvFlPxPQYCwp/6yThbk13VIwG/f1/PEabFPpZbJEuQ==", "band"=>{"name"=>"Agalloch"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Agalloch"]]
+  Rendered bands/create.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:59:23 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yak/bNMRSxfA2Leqy8WWlhnwle6RQ5ZIqzPfeto5hThUZvFlPxPQYCwp/6yThbk13VIwG/f1/PEabFPpZbJEuQ==", "band"=>{"name"=>"Ace Wilder"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Ace Wilder"]]
+  [1m[35mBand Exists (0.4ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2  [["user_id", 4], ["id", 139]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 4], ["band_id", 139], ["created_at", "2015-04-01 15:59:23.532274"], ["updated_at", "2015-04-01 15:59:23.532274"]]
+  [1m[36m (8.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (7.7ms)
+Completed 200 OK in 35ms (Views: 15.1ms | ActiveRecord: 10.4ms)
+  [1m[36mBand Load (3.9ms)[0m  [1mSELECT "bands".* FROM "bands"[0m
+
+
+Started POST "/bands" for ::1 at 2015-04-01 12:00:06 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yak/bNMRSxfA2Leqy8WWlhnwle6RQ5ZIqzPfeto5hThUZvFlPxPQYCwp/6yThbk13VIwG/f1/PEabFPpZbJEuQ==", "band"=>{"name"=>"Abandon All Ships"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.1ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Abandon All Ships"]]
+  [1m[35mBand Exists (0.4ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2  [["user_id", 4], ["id", 122]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 4], ["band_id", 122], ["created_at", "2015-04-01 16:00:06.496609"], ["updated_at", "2015-04-01 16:00:06.496609"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (7.8ms)
+Completed 200 OK in 30ms (Views: 15.4ms | ActiveRecord: 2.9ms)
+  [1m[35mBand Load (1.4ms)[0m  SELECT "bands".* FROM "bands"
+
+
+Started POST "/bands" for ::1 at 2015-04-01 12:00:30 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yak/bNMRSxfA2Leqy8WWlhnwle6RQ5ZIqzPfeto5hThUZvFlPxPQYCwp/6yThbk13VIwG/f1/PEabFPpZbJEuQ==", "band"=>{"name"=>"Abandon Kansas"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Abandon Kansas"]]
+  [1m[35mBand Exists (0.2ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2  [["user_id", 4], ["id", 123]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 4], ["band_id", 123], ["created_at", "2015-04-01 16:00:30.552584"], ["updated_at", "2015-04-01 16:00:30.552584"]]
+  [1m[36m (7.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'testee' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'email@email.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (8.8ms)
+Completed 200 OK in 36ms (Views: 17.9ms | ActiveRecord: 9.8ms)
+  [1m[36mBand Load (1.1ms)[0m  [1mSELECT  "bands".* FROM "bands"  ORDER BY "bands"."id" DESC LIMIT 1[0m
+  [1m[35mBand Load (0.3ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT 1  [["id", 306]]
+  [1m[36mBand Load (0.9ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Beyonce"]]
+  [1m[35mBand Load (8.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Beyoncé"]]
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnSearchNameToBands (20150401170305)
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36m (16.4ms)[0m  [1mALTER TABLE "bands" ADD "search_name" character varying[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150401170305"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'bands'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (8.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'user_bands'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-04-01 13:05:57 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mBand Load (3.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 4]]
+PG::FeatureNotSupported: ERROR:  cached plan must not change result type
+: SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1
+  [1m[36mBand Load (0.9ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 127ms (Views: 88.4ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/band-4a0c2ca5145c4cf46bf7225b36ae1f66.js?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/assets/application-46f3bc6dcc7dd7cba17a143bfceb2015.js?body=1" for ::1 at 2015-04-01 13:05:57 -0400
+
+
+Started GET "/logout" for ::1 at 2015-04-01 13:05:59 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 13:05:59 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/band-4a0c2ca5145c4cf46bf7225b36ae1f66.js?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/assets/application-46f3bc6dcc7dd7cba17a143bfceb2015.js?body=1" for ::1 at 2015-04-01 13:05:59 -0400
+
+
+Started GET "/login" for ::1 at 2015-04-01 13:06:01 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/band-4a0c2ca5145c4cf46bf7225b36ae1f66.js?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started GET "/assets/application-46f3bc6dcc7dd7cba17a143bfceb2015.js?body=1" for ::1 at 2015-04-01 13:06:02 -0400
+
+
+Started POST "/sessions" for ::1 at 2015-04-01 13:06:08 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QzrnkjD1AT9bO6u958JmYhCQRccpc64cIX6AjXbVMDPecCYAYkH1fyjrAiTP3MjhyAc+dKpV9yHUEcT7O4M9UA==", "user"=>{"email"=>"andrew@email.com", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "andrew@email.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 86ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 13:06:08 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/custom-070c2329d90a800782a74896bcf23755.css?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/application-2e01710a82b6fd02f97ef04ecdd8efb6.css?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/band-4a0c2ca5145c4cf46bf7225b36ae1f66.js?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started GET "/assets/application-46f3bc6dcc7dd7cba17a143bfceb2015.js?body=1" for ::1 at 2015-04-01 13:06:08 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 13:06:28 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R0jd8UGb2TIB4WNroaGyyfl9jAJ8E3F/jruIkvnegiXaAhxjEy8tcnIxyvKJvxxKIer3sf81KEJ71MzktIiPRg==", "band"=>{"name"=>"ME"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.9ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "ME"]]
+PG::FeatureNotSupported: ERROR:  cached plan must not change result type
+: SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "ME"]]
+  Rendered bands/create.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 10.5ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 13:06:36 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R0jd8UGb2TIB4WNroaGyyfl9jAJ8E3F/jruIkvnegiXaAhxjEy8tcnIxyvKJvxxKIer3sf81KEJ71MzktIiPRg==", "band"=>{"name"=>"A Few Good Men"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "A Few Good Men"]]
+  [1m[35mBand Exists (0.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2  [["user_id", 1], ["id", 96]]
+PG::FeatureNotSupported: ERROR:  cached plan must not change result type
+: SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2
+  [1m[36mBand Exists (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1 AND "bands"."id" = $2[0m  [["user_id", 1], ["id", 96]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["band_id", 96], ["created_at", "2015-04-01 17:06:36.763307"], ["updated_at", "2015-04-01 17:06:36.763307"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'super_andrew' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'andrew@email.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/create.html.erb (9.1ms)
+Completed 200 OK in 48ms (Views: 17.5ms | ActiveRecord: 6.4ms)
+  [1m[36mBand Load (3.1ms)[0m  [1mSELECT  "bands".* FROM "bands"  ORDER BY "bands"."id" ASC LIMIT 1[0m
+  [1m[35mBand Load (0.8ms)[0m  SELECT  "bands".* FROM "bands"  ORDER BY "bands"."id" ASC LIMIT 1
+  [1m[36mBand Load (1.3ms)[0m  [1mSELECT "bands".* FROM "bands"[0m
+  [1m[35m (1.4ms)[0m  BEGIN
+  [1m[36mSQL (7.1ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a bullet for pretty boy"], ["updated_at", "2015-04-01 18:24:12.679915"], ["id", 95]]
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a few good men"], ["updated_at", "2015-04-01 18:24:12.702524"], ["id", 96]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a firm handshake"], ["updated_at", "2015-04-01 18:24:12.705151"], ["id", 97]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a great big pile of leaves"], ["updated_at", "2015-04-01 18:24:12.707074"], ["id", 98]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a great big world"], ["updated_at", "2015-04-01 18:24:12.708914"], ["id", 99]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a lot like birds"], ["updated_at", "2015-04-01 18:24:12.710965"], ["id", 100]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a pale horse named death"], ["updated_at", "2015-04-01 18:24:12.713041"], ["id", 101]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a perfect circle"], ["updated_at", "2015-04-01 18:24:12.714727"], ["id", 102]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a place to bury strangers"], ["updated_at", "2015-04-01 18:24:12.716646"], ["id", 103]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a rocket to the moon"], ["updated_at", "2015-04-01 18:24:12.718513"], ["id", 104]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a silent film"], ["updated_at", "2015-04-01 18:24:12.720440"], ["id", 105]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a skylit drive"], ["updated_at", "2015-04-01 18:24:12.723083"], ["id", 106]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a sound of thunder"], ["updated_at", "2015-04-01 18:24:12.724857"], ["id", 107]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a static lullaby"], ["updated_at", "2015-04-01 18:24:12.726480"], ["id", 108]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a tribe called quest"], ["updated_at", "2015-04-01 18:24:12.728673"], ["id", 109]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a wilhelm scream"], ["updated_at", "2015-04-01 18:24:12.730410"], ["id", 110]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a-trak"], ["updated_at", "2015-04-01 18:24:12.732148"], ["id", 111]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a.a. bondy"], ["updated_at", "2015-04-01 18:24:12.734039"], ["id", 112]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "a.j. mclean"], ["updated_at", "2015-04-01 18:24:12.735582"], ["id", 113]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "a.r. rahman"], ["updated_at", "2015-04-01 18:24:12.737225"], ["id", 114]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "aaron fresh"], ["updated_at", "2015-04-01 18:24:12.739040"], ["id", 115]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "aaron parks"], ["updated_at", "2015-04-01 18:24:12.740803"], ["id", 116]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "aaron pfenning"], ["updated_at", "2015-04-01 18:24:12.742416"], ["id", 117]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "aaron rothe"], ["updated_at", "2015-04-01 18:24:12.744003"], ["id", 118]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "aaron sprinkle"], ["updated_at", "2015-04-01 18:24:12.746035"], ["id", 119]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "aaron west and the roaring twenties"], ["updated_at", "2015-04-01 18:24:12.748405"], ["id", 120]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "abandon"], ["updated_at", "2015-04-01 18:24:12.750425"], ["id", 121]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "abandon all ships"], ["updated_at", "2015-04-01 18:24:12.752253"], ["id", 122]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "abandon kansas"], ["updated_at", "2015-04-01 18:24:12.754108"], ["id", 123]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "abandoned pools"], ["updated_at", "2015-04-01 18:24:12.756576"], ["id", 124]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "abba"], ["updated_at", "2015-04-01 18:24:12.758382"], ["id", 125]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "abigail washburn"], ["updated_at", "2015-04-01 18:24:12.760296"], ["id", 126]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "about a mile"], ["updated_at", "2015-04-01 18:24:12.762237"], ["id", 127]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "above the golden state"], ["updated_at", "2015-04-01 18:24:12.764052"], ["id", 128]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "abstract rude"], ["updated_at", "2015-04-01 18:24:12.765746"], ["id", 129]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "abysmal dawn"], ["updated_at", "2015-04-01 18:24:12.767736"], ["id", 130]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "the acacia strain"], ["updated_at", "2015-04-01 18:24:12.769799"], ["id", 131]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "the academy is..."], ["updated_at", "2015-04-01 18:24:12.771659"], ["id", 132]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "academy of ancient music"], ["updated_at", "2015-04-01 18:24:12.773522"], ["id", 133]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "acappella"], ["updated_at", "2015-04-01 18:24:12.775292"], ["id", 134]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "acda en de munnik"], ["updated_at", "2015-04-01 18:24:12.776888"], ["id", 135]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ace enders"], ["updated_at", "2015-04-01 18:24:12.778495"], ["id", 136]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "ace hood"], ["updated_at", "2015-04-01 18:24:12.780355"], ["id", 137]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ace of base"], ["updated_at", "2015-04-01 18:24:12.782113"], ["id", 138]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "ace wilder"], ["updated_at", "2015-04-01 18:24:12.783697"], ["id", 139]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "achim petry"], ["updated_at", "2015-04-01 18:24:12.785410"], ["id", 140]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "achim reichel"], ["updated_at", "2015-04-01 18:24:12.787087"], ["id", 141]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "acid drinkers"], ["updated_at", "2015-04-01 18:24:12.788642"], ["id", 142]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "acoustic alchemy"], ["updated_at", "2015-04-01 18:24:12.790532"], ["id", 143]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "action item"], ["updated_at", "2015-04-01 18:24:12.792476"], ["id", 144]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "active child"], ["updated_at", "2015-04-01 18:24:12.794238"], ["id", 145]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ad finem"], ["updated_at", "2015-04-01 18:24:12.795969"], ["id", 146]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "adam ant"], ["updated_at", "2015-04-01 18:24:12.797733"], ["id", 147]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "adam cappa"], ["updated_at", "2015-04-01 18:24:12.799413"], ["id", 148]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "adam freeland"], ["updated_at", "2015-04-01 18:24:12.801452"], ["id", 149]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "adam harvey"], ["updated_at", "2015-04-01 18:24:12.803452"], ["id", 150]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "adam haworth stephens"], ["updated_at", "2015-04-01 18:24:12.805234"], ["id", 151]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "adam lambert"], ["updated_at", "2015-04-01 18:24:12.806847"], ["id", 152]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "adam zindani"], ["updated_at", "2015-04-01 18:24:12.808622"], ["id", 153]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "addison groove"], ["updated_at", "2015-04-01 18:24:12.810442"], ["id", 154]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "addison road"], ["updated_at", "2015-04-01 18:24:12.812331"], ["id", 155]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "adel tawil"], ["updated_at", "2015-04-01 18:24:12.814197"], ["id", 156]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "adele"], ["updated_at", "2015-04-01 18:24:12.815871"], ["id", 157]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "adelitas way"], ["updated_at", "2015-04-01 18:24:12.817488"], ["id", 158]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "ado kojo"], ["updated_at", "2015-04-01 18:24:12.819107"], ["id", 159]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "adoro"], ["updated_at", "2015-04-01 18:24:12.820910"], ["id", 160]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "adrenaline mob"], ["updated_at", "2015-04-01 18:24:12.822547"], ["id", 161]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "adrian belew"], ["updated_at", "2015-04-01 18:24:12.824129"], ["id", 162]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "adventure club"], ["updated_at", "2015-04-01 18:24:12.825848"], ["id", 163]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "aerosmith"], ["updated_at", "2015-04-01 18:24:12.827587"], ["id", 164]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "afro celt sound system"], ["updated_at", "2015-04-01 18:24:12.829200"], ["id", 165]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "afrocubism"], ["updated_at", "2015-04-01 18:24:12.830793"], ["id", 166]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "after midnight project"], ["updated_at", "2015-04-01 18:24:12.832734"], ["id", 167]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "after the burial"], ["updated_at", "2015-04-01 18:24:12.834553"], ["id", 168]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "after the fire"], ["updated_at", "2015-04-01 18:24:12.836228"], ["id", 169]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "afterhours"], ["updated_at", "2015-04-01 18:24:12.838010"], ["id", 170]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "the afters"], ["updated_at", "2015-04-01 18:24:12.839683"], ["id", 171]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "agallah"], ["updated_at", "2015-04-01 18:24:12.841223"], ["id", 172]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "agents of good roots"], ["updated_at", "2015-04-01 18:24:12.842788"], ["id", 173]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ages and ages"], ["updated_at", "2015-04-01 18:24:12.844617"], ["id", 174]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "the aggrolites"], ["updated_at", "2015-04-01 18:24:12.846264"], ["id", 175]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "agnieszka chylinska"], ["updated_at", "2015-04-01 18:24:12.847813"], ["id", 176]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "agnostic front"], ["updated_at", "2015-04-01 18:24:12.849576"], ["id", 177]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "agoraphobic nosebleed"], ["updated_at", "2015-04-01 18:24:12.851593"], ["id", 178]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "ahn trio"], ["updated_at", "2015-04-01 18:24:12.853350"], ["id", 179]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ai"], ["updated_at", "2015-04-01 18:24:12.855105"], ["id", 180]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "aiko"], ["updated_at", "2015-04-01 18:24:12.856839"], ["id", 181]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "aimee mann"], ["updated_at", "2015-04-01 18:24:12.858505"], ["id", 182]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "air traffic"], ["updated_at", "2015-04-01 18:24:12.860118"], ["id", 183]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "the airborne toxic event"], ["updated_at", "2015-04-01 18:24:12.862119"], ["id", 184]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "akon"], ["updated_at", "2015-04-01 18:24:12.864014"], ["id", 185]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "akwid"], ["updated_at", "2015-04-01 18:24:12.865744"], ["id", 186]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "al green"], ["updated_at", "2015-04-01 18:24:12.867680"], ["id", 187]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "al jardine"], ["updated_at", "2015-04-01 18:24:12.869413"], ["id", 188]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alabama"], ["updated_at", "2015-04-01 18:24:12.871061"], ["id", 189]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alacranes musical"], ["updated_at", "2015-04-01 18:24:12.872769"], ["id", 190]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alain bashung"], ["updated_at", "2015-04-01 18:24:12.874446"], ["id", 191]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alain souchon"], ["updated_at", "2015-04-01 18:24:12.876063"], ["id", 192]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alan parsons"], ["updated_at", "2015-04-01 18:24:12.877673"], ["id", 193]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "the alan parsons project"], ["updated_at", "2015-04-01 18:24:12.879756"], ["id", 194]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alana davis"], ["updated_at", "2015-04-01 18:24:12.881538"], ["id", 195]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alanis morissette"], ["updated_at", "2015-04-01 18:24:12.883269"], ["id", 196]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alannah myles"], ["updated_at", "2015-04-01 18:24:12.885679"], ["id", 197]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alarm will sound"], ["updated_at", "2015-04-01 18:24:12.887331"], ["id", 198]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "the alarmists"], ["updated_at", "2015-04-01 18:24:12.888877"], ["id", 199]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alberta cross"], ["updated_at", "2015-04-01 18:24:12.890782"], ["id", 200]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "albino superstars"], ["updated_at", "2015-04-01 18:24:12.892322"], ["id", 201]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "the album leaf"], ["updated_at", "2015-04-01 18:24:12.893926"], ["id", 202]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alejandro escovedo"], ["updated_at", "2015-04-01 18:24:12.895644"], ["id", 203]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alert the medic"], ["updated_at", "2015-04-01 18:24:12.897356"], ["id", 204]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alesana"], ["updated_at", "2015-04-01 18:24:12.898990"], ["id", 205]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alex band"], ["updated_at", "2015-04-01 18:24:12.900615"], ["id", 206]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alex gaudino"], ["updated_at", "2015-04-01 18:24:12.902737"], ["id", 207]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alex neri"], ["updated_at", "2015-04-01 18:24:12.904462"], ["id", 208]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alex sayz"], ["updated_at", "2015-04-01 18:24:12.906196"], ["id", 209]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alex skolnick"], ["updated_at", "2015-04-01 18:24:12.908096"], ["id", 210]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alexa goddard"], ["updated_at", "2015-04-01 18:24:12.910080"], ["id", 211]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alexander robotnick"], ["updated_at", "2015-04-01 18:24:12.911954"], ["id", 212]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alexander rybak"], ["updated_at", "2015-04-01 18:24:12.914038"], ["id", 213]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alexandra burke"], ["updated_at", "2015-04-01 18:24:12.930760"], ["id", 214]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alexi murdoch"], ["updated_at", "2015-04-01 18:24:12.932639"], ["id", 215]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alfie boe"], ["updated_at", "2015-04-01 18:24:12.934554"], ["id", 216]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alfonso andre"], ["updated_at", "2015-04-01 18:24:12.936490"], ["id", 217]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ali shaheed muhammad"], ["updated_at", "2015-04-01 18:24:12.938579"], ["id", 218]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "ali spagnola"], ["updated_at", "2015-04-01 18:24:12.940563"], ["id", 219]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alice cooper"], ["updated_at", "2015-04-01 18:24:12.942967"], ["id", 220]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alice deejay"], ["updated_at", "2015-04-01 18:24:12.945087"], ["id", 221]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alice glass"], ["updated_at", "2015-04-01 18:24:12.946918"], ["id", 222]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alice in chains"], ["updated_at", "2015-04-01 18:24:12.948954"], ["id", 223]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alice smith"], ["updated_at", "2015-04-01 18:24:12.950758"], ["id", 224]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alicia keys"], ["updated_at", "2015-04-01 18:24:12.952368"], ["id", 225]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alien ant farm"], ["updated_at", "2015-04-01 18:24:12.954194"], ["id", 226]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alih jey"], ["updated_at", "2015-04-01 18:24:12.955838"], ["id", 227]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alison balsom"], ["updated_at", "2015-04-01 18:24:12.957521"], ["id", 228]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alison moyet"], ["updated_at", "2015-04-01 18:24:12.959354"], ["id", 229]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alive like me"], ["updated_at", "2015-04-01 18:24:12.961268"], ["id", 230]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alkaline trio"], ["updated_at", "2015-04-01 18:24:12.963222"], ["id", 231]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "all my faith lost"], ["updated_at", "2015-04-01 18:24:12.965320"], ["id", 232]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "all shall perish"], ["updated_at", "2015-04-01 18:24:12.967772"], ["id", 233]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "all that remains"], ["updated_at", "2015-04-01 18:24:12.969876"], ["id", 234]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "all the saints"], ["updated_at", "2015-04-01 18:24:12.971831"], ["id", 235]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "all time low"], ["updated_at", "2015-04-01 18:24:12.973420"], ["id", 236]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "allegaeon"], ["updated_at", "2015-04-01 18:24:12.975138"], ["id", 237]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "allen stone"], ["updated_at", "2015-04-01 18:24:12.976894"], ["id", 238]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "allen toussaint"], ["updated_at", "2015-04-01 18:24:12.978602"], ["id", 239]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alligatoah"], ["updated_at", "2015-04-01 18:24:12.980396"], ["id", 240]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "allison iraheta"], ["updated_at", "2015-04-01 18:24:12.982367"], ["id", 241]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "allison moorer"], ["updated_at", "2015-04-01 18:24:12.984374"], ["id", 242]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "allstar weekend"], ["updated_at", "2015-04-01 18:24:12.986220"], ["id", 243]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "the almost"], ["updated_at", "2015-04-01 18:24:12.987935"], ["id", 244]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "aloe blacc"], ["updated_at", "2015-04-01 18:24:12.989898"], ["id", 245]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "aloha from hell"], ["updated_at", "2015-04-01 18:24:12.991622"], ["id", 246]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alpha blondy"], ["updated_at", "2015-04-01 18:24:12.993378"], ["id", 247]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alpha rev"], ["updated_at", "2015-04-01 18:24:12.995187"], ["id", 248]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alphabeat"], ["updated_at", "2015-04-01 18:24:12.996872"], ["id", 249]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alter bridge"], ["updated_at", "2015-04-01 18:24:12.998503"], ["id", 250]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alunageorge"], ["updated_at", "2015-04-01 18:24:13.000507"], ["id", 251]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "alvvays"], ["updated_at", "2015-04-01 18:24:13.002380"], ["id", 252]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "alyssa bernal"], ["updated_at", "2015-04-01 18:24:13.004256"], ["id", 253]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amanda fondell"], ["updated_at", "2015-04-01 18:24:13.006531"], ["id", 254]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amanda palmer"], ["updated_at", "2015-04-01 18:24:13.008336"], ["id", 255]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amaral"], ["updated_at", "2015-04-01 18:24:13.010111"], ["id", 256]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amber pacific"], ["updated_at", "2015-04-01 18:24:13.011936"], ["id", 257]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ambitious lovers"], ["updated_at", "2015-04-01 18:24:13.013717"], ["id", 258]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amel bent"], ["updated_at", "2015-04-01 18:24:13.015417"], ["id", 259]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amel larrieux"], ["updated_at", "2015-04-01 18:24:13.017018"], ["id", 260]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amen dunes"], ["updated_at", "2015-04-01 18:24:13.019009"], ["id", 261]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "american aquarium"], ["updated_at", "2015-04-01 18:24:13.020858"], ["id", 262]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "american authors"], ["updated_at", "2015-04-01 18:24:13.022578"], ["id", 263]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "the american boychoir"], ["updated_at", "2015-04-01 18:24:13.024990"], ["id", 264]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "american fangs"], ["updated_at", "2015-04-01 18:24:13.027112"], ["id", 265]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "american head charge"], ["updated_at", "2015-04-01 18:24:13.029446"], ["id", 266]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "american hi-fi"], ["updated_at", "2015-04-01 18:24:13.031541"], ["id", 267]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "american music club"], ["updated_at", "2015-04-01 18:24:13.033518"], ["id", 268]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "the american scene"], ["updated_at", "2015-04-01 18:24:13.035580"], ["id", 269]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "american sharks"], ["updated_at", "2015-04-01 18:24:13.037446"], ["id", 270]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "american young"], ["updated_at", "2015-04-01 18:24:13.039252"], ["id", 271]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amethystium"], ["updated_at", "2015-04-01 18:24:13.041184"], ["id", 272]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amira willighagen"], ["updated_at", "2015-04-01 18:24:13.042980"], ["id", 273]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amon amarth"], ["updated_at", "2015-04-01 18:24:13.044628"], ["id", 274]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "among the thirsty"], ["updated_at", "2015-04-01 18:24:13.046393"], ["id", 275]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amorphis"], ["updated_at", "2015-04-01 18:24:13.048205"], ["id", 276]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amos lee"], ["updated_at", "2015-04-01 18:24:13.050195"], ["id", 277]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amp live"], ["updated_at", "2015-04-01 18:24:13.052732"], ["id", 278]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amr diab"], ["updated_at", "2015-04-01 18:24:13.054569"], ["id", 279]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amtrac"], ["updated_at", "2015-04-01 18:24:13.056467"], ["id", 280]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amy grant"], ["updated_at", "2015-04-01 18:24:13.058736"], ["id", 281]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "amy pearson"], ["updated_at", "2015-04-01 18:24:13.061091"], ["id", 282]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "amy winehouse"], ["updated_at", "2015-04-01 18:24:13.062973"], ["id", 283]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "an horse"], ["updated_at", "2015-04-01 18:24:13.064960"], ["id", 284]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "ana free"], ["updated_at", "2015-04-01 18:24:13.066682"], ["id", 285]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ana moura"], ["updated_at", "2015-04-01 18:24:13.068335"], ["id", 286]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "anamanaguchi"], ["updated_at", "2015-04-01 18:24:13.070303"], ["id", 287]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "anarbor"], ["updated_at", "2015-04-01 18:24:13.072236"], ["id", 288]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "anasol"], ["updated_at", "2015-04-01 18:24:13.074334"], ["id", 289]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "anastacia"], ["updated_at", "2015-04-01 18:24:13.076772"], ["id", 290]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "anberlin"], ["updated_at", "2015-04-01 18:24:13.080734"], ["id", 291]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "ancient astronauts"], ["updated_at", "2015-04-01 18:24:13.082996"], ["id", 292]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "and hell followed with"], ["updated_at", "2015-04-01 18:24:13.084684"], ["id", 293]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "anders osborne"], ["updated_at", "2015-04-01 18:24:13.086541"], ["id", 294]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "andra generationen"], ["updated_at", "2015-04-01 18:24:13.088477"], ["id", 295]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "andre crom"], ["updated_at", "2015-04-01 18:24:13.090421"], ["id", 296]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "andrea bocelli"], ["updated_at", "2015-04-01 18:24:13.092228"], ["id", 297]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "andrea razzauti"], ["updated_at", "2015-04-01 18:24:13.094228"], ["id", 298]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "andreas gabalier"], ["updated_at", "2015-04-01 18:24:13.096055"], ["id", 299]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "andrew belle"], ["updated_at", "2015-04-01 18:24:13.097821"], ["id", 300]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "andrew fletcher"], ["updated_at", "2015-04-01 18:24:13.099806"], ["id", 301]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "andrew jackson jihad"], ["updated_at", "2015-04-01 18:24:13.101583"], ["id", 302]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "andrew lloyd webber"], ["updated_at", "2015-04-01 18:24:13.103375"], ["id", 303]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "andrew rayel"], ["updated_at", "2015-04-01 18:24:13.105811"], ["id", 304]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3[0m  [["search_name", "andrew ripp"], ["updated_at", "2015-04-01 18:24:13.107851"], ["id", 305]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "bands" SET "search_name" = $1, "updated_at" = $2 WHERE "bands"."id" = $3  [["search_name", "e-40"], ["updated_at", "2015-04-01 18:24:13.109634"], ["id", 306]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mBand Load (1.3ms)[0m  [1mSELECT  "bands".* FROM "bands"  ORDER BY "bands"."id" ASC LIMIT 1[0m
+  [1m[35mBand Load (1.0ms)[0m  SELECT "bands".* FROM "bands"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mBand Load (1.2ms)[0m  [1mSELECT "bands".* FROM "bands"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[36mBand Load (1.1ms)[0m  [1mSELECT "bands".* FROM "bands"[0m
