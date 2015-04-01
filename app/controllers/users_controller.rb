@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       # Create a new session when a new user account is created
       log_in(@user)
       UserMailer.welcome_email(@user).deliver
-      redirect_to root_path, :notice => "Account created!"
+      redirect_to root_path #:notice => "Account created!"
     else
       render :new
     end

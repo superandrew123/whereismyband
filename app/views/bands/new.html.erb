@@ -6,14 +6,15 @@
 	<div class="col-md-6">
 		<% if current_user %>
 			<%= form_for @band, class: "new-band" do |f| %>
-				<%= f.label :name%>
-				<%= f.text_field :name, class: "band-name btn btn-lg btn-block"%>
-				<%= f.submit "add artist" %>
+				<%= f.label :name, :style => "display: none;"%>
+				<%= f.text_field :name, class: "band-name btn btn-lg btn-block", placeholder: "Enter an artist's name..."%>
+				<%= f.submit "add artist", :style => "display: none;" %>
 			<% end %><br><br>
+			<%= render current_user.bands %>
 		<% else %>
 			<%= form_for @band, method: "GET", url: { controller: "sessions", action: "new" },  :html => {:class => "fake_band"} do |f| %>
-				<%= f.label :name%>
-				<%= f.text_field :name, class: "band-name btn btn-lg btn-block"%>
+				<%= f.label :name, :style => "display: none;"%>
+				<%= f.text_field :name, class: "band-name btn btn-lg btn-block", placeholder: "Enter an artist's name..."%>
 				<%= f.submit "add artist", :style => "display: none;" %>
 			<% end %><br><br>
 		<% end %>
@@ -25,7 +26,7 @@
 	<div class="col-md-6">
 		<section>
 			<ul class="band-list">
-				<%= render current_user.bands %>
+
 			</ul>
 		</section>
 </div>

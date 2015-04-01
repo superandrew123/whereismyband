@@ -28,10 +28,8 @@ class SessionsController < ApplicationController
     # binding.pry
     reset_session
     # binding.pry
-    flash[:notice] = "Logged out!"
+    # flash[:notice] = "Logged out!"
     redirect_to root_path
-
-
   end
 
   private
