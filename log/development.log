@@ -22198,3 +22198,2664 @@ Processing by BandsController#create as JS
   Rendered bands/_band.html.erb (0.1ms)
   Rendered bands/create.js.erb (6.6ms)
 Completed 200 OK in 28ms (Views: 15.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 09:53:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.7ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.4ms)
+  Rendered bands/new.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 131ms (Views: 97.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/band-0485900bee66b990d9bce468d68ae6e1.js?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started GET "/assets/application-2f299d41cc34dc237e361940dc469ae3.js?body=1" for ::1 at 2015-04-01 09:53:34 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 09:53:38 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"Byron McMackin"}, "commit"=>"add artist"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Byron McMackin"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["band_id", 1149], ["created_at", "2015-04-01 13:53:38.777407"], ["updated_at", "2015-04-01 13:53:38.777407"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/create.js.erb (12.7ms)
+Completed 200 OK in 42ms (Views: 20.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 09:54:49 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (1.4ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/band-0485900bee66b990d9bce468d68ae6e1.js?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started GET "/assets/application-2f299d41cc34dc237e361940dc469ae3.js?body=1" for ::1 at 2015-04-01 09:54:49 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 09:54:55 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"A Few Good Men"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.3ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "A Few Good Men"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["band_id", 327], ["created_at", "2015-04-01 13:54:55.927375"], ["updated_at", "2015-04-01 13:54:55.927375"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.9ms)
+Completed 200 OK in 26ms (Views: 15.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:59 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 09:54:59 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:59 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:59 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:54:59 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 09:55:08 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"A Few Good Men"}, "commit"=>"add artist"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "A Few Good Men"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["band_id", 327], ["created_at", "2015-04-01 13:55:08.014718"], ["updated_at", "2015-04-01 13:55:08.014718"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.4ms)
+Completed 200 OK in 23ms (Views: 14.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 09:55:55 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.4ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/band-0485900bee66b990d9bce468d68ae6e1.js?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started GET "/assets/application-2f299d41cc34dc237e361940dc469ae3.js?body=1" for ::1 at 2015-04-01 09:55:55 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 09:56:02 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"Byron McMackin"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.4ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Byron McMackin"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["band_id", 1149], ["created_at", "2015-04-01 13:56:02.333530"], ["updated_at", "2015-04-01 13:56:02.333530"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.4ms)
+Completed 200 OK in 24ms (Views: 14.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:09:13 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:13 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started GET "/assets/band-19e6920c7ed8073f77cc911fbbfcc9c1.js?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started GET "/assets/application-f240283ee21f3b2f9a0f66b04c136a20.js?body=1" for ::1 at 2015-04-01 10:09:14 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:09:19 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"Byron McMackin"}, "commit"=>"add artist"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Byron McMackin"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["band_id", 1149], ["created_at", "2015-04-01 14:09:19.435793"], ["updated_at", "2015-04-01 14:09:19.435793"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.4ms)
+Completed 200 OK in 24ms (Views: 14.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:09:36 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.4ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/band-53b2419f303037375193cddf616139b7.js?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started GET "/assets/application-ff9378666c86bb7444ddcc31beeb71a4.js?body=1" for ::1 at 2015-04-01 10:09:37 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:09:40 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"Byron McMackin"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.3ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Byron McMackin"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["band_id", 1149], ["created_at", "2015-04-01 14:09:40.757715"], ["updated_at", "2015-04-01 14:09:40.757715"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.8ms)
+Completed 200 OK in 25ms (Views: 15.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:10:21 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.9ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/band-06ce5464de8fdee64d1158345716a1e1.js?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started GET "/assets/application-dbb3f825dd88c3ff84d3a96bacbcb56a.js?body=1" for ::1 at 2015-04-01 10:10:21 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:10:24 -0400
+Processing by BandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"icRHOnp/cf0Eiy5/dyOXtTiNmO5NNrcNlfl/nYks22fwS6heimZegJ+1s7OQvmwRvDb29VYiy94LmsgagHFPOg==", "band"=>{"name"=>"A Few Good Men"}, "commit"=>"add artist"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "A Few Good Men"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["band_id", 327], ["created_at", "2015-04-01 14:10:24.558509"], ["updated_at", "2015-04-01 14:10:24.558509"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 16ms
+
+ActionView::MissingTemplate (Missing template bands/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/cyrusghazanfar/Desktop/whereismyband/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (45.0ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (32.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (71.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:11:07 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/band-7afa1c088c453c9b11455cc01ec7e309.js?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started GET "/assets/application-a5b81d87c49f2a867dc2d1c031191553.js?body=1" for ::1 at 2015-04-01 10:11:07 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:11:11 -0400
+Processing by BandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eqdaBTGPaXEl1uTlt6cGe86S3ewUSO0tXKlVhaVW5PcDKLVhwZZGDL7oeSlQOv3fSimz9w9ckf7CyuICrAtwqg==", "band"=>{"name"=>"Byron McMackin"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.3ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Byron McMackin"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["band_id", 1149], ["created_at", "2015-04-01 14:11:11.660717"], ["updated_at", "2015-04-01 14:11:11.660717"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 12ms
+
+ActionView::MissingTemplate (Missing template bands/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/cyrusghazanfar/Desktop/whereismyband/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (44.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (31.5ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (71.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:11:50 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.4ms)
+  Rendered bands/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 76ms (Views: 61.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/band-e387dfc9a5c8c6a4536311011862fe2f.js?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started GET "/assets/application-a784c52a3dcc74d6c72312816297bc36.js?body=1" for ::1 at 2015-04-01 10:11:50 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:11:54 -0400
+Processing by BandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1SHcnAWY3humjuXeSTIPz4n0T5iinT5j3glnQQk/ZvSsrjP49YHxZj2weBKur/RrDU8hg7mJQrBAatDGAGLyqQ==", "band"=>{"name"=>"Byron McMackin"}, "commit"=>"add artist"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Byron McMackin"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["band_id", 1149], ["created_at", "2015-04-01 14:11:54.871687"], ["updated_at", "2015-04-01 14:11:54.871687"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 18ms
+
+ActionView::MissingTemplate (Missing template bands/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/cyrusghazanfar/Desktop/whereismyband/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (43.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (30.0ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (65.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:12:28 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.6ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/band-dfe9c4d105ff5c022728deb556314c24.js?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/assets/application-243bd12021159d98b955bb9ca4fc5446.js?body=1" for ::1 at 2015-04-01 10:12:28 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:13:08 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/band-00fb4840a58add417b36b0764791630f.js?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/assets/application-12b8483969a21b492e022d1d90ddc897.js?body=1" for ::1 at 2015-04-01 10:13:08 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:13:24 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/application-95c01ed38816cb7afdd75e032aea3a62.js?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/assets/band-df252ed99263f0b1bf4166666f578033.js?body=1" for ::1 at 2015-04-01 10:13:25 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:13:30 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/band-df252ed99263f0b1bf4166666f578033.js?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/application-95c01ed38816cb7afdd75e032aea3a62.js?body=1" for ::1 at 2015-04-01 10:13:30 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:39 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:39 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:13:39 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:39 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:13:39 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:16:34 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.6ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 64ms (Views: 61.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/band-75f592831e83894298bfd429acd71b83.js?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/assets/application-fb717eb097ad2eefa1b47460a091dd82.js?body=1" for ::1 at 2015-04-01 10:16:34 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:16:54 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/band-75f592831e83894298bfd429acd71b83.js?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/assets/application-fb717eb097ad2eefa1b47460a091dd82.js?body=1" for ::1 at 2015-04-01 10:16:54 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:19:12 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.9ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/band-03438e0066ab6455280fb739281b17c5.js?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started GET "/assets/application-fe6373639dc1ef36d8f45738a4bafa9c.js?body=1" for ::1 at 2015-04-01 10:19:12 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:21:48 -0400
+Processing by BandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SI2um1dztqiiMCl/J3bgFnd1WnVEiCwAkb5T9yKmCckxAkH/p2qZ1TkOtLPA6xuy8840bl+cUNMP3eRwK/udlA==", "band"=>{"name"=>"A Lot like birds"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.3ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "A Lot like birds"]]
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::AssociationTypeMismatch (Band(#70322653881580) expected, got NilClass(#70322607297080)):
+  app/controllers/bands_controller.rb:14:in `create'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (30.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (66.6ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:21:55 -0400
+Processing by BandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SI2um1dztqiiMCl/J3bgFnd1WnVEiCwAkb5T9yKmCckxAkH/p2qZ1TkOtLPA6xuy8840bl+cUNMP3eRwK/udlA==", "band"=>{"name"=>"A Lot like Birds"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "A Lot like Birds"]]
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["band_id", 331], ["created_at", "2015-04-01 14:21:55.199141"], ["updated_at", "2015-04-01 14:21:55.199141"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 14ms
+
+ActionView::MissingTemplate (Missing template bands/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/cyrusghazanfar/Desktop/whereismyband/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/cyrusghazanfar/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (46.9ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (30.1ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (65.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:22:14 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 36.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/band-03438e0066ab6455280fb739281b17c5.js?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started GET "/assets/application-fe6373639dc1ef36d8f45738a4bafa9c.js?body=1" for ::1 at 2015-04-01 10:22:14 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:22:41 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"Adele"}, "commit"=>"add artist"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Adele"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["band_id", 388], ["created_at", "2015-04-01 14:22:41.381076"], ["updated_at", "2015-04-01 14:22:41.381076"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (7.0ms)
+Completed 200 OK in 25ms (Views: 15.4ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:22:48 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"Adele"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.3ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Adele"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["band_id", 388], ["created_at", "2015-04-01 14:22:48.383485"], ["updated_at", "2015-04-01 14:22:48.383485"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (8.1ms)
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:22:55 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"Adele"}, "commit"=>"add artist"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Adele"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["band_id", 388], ["created_at", "2015-04-01 14:22:55.862079"], ["updated_at", "2015-04-01 14:22:55.862079"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.1ms)
+Completed 200 OK in 25ms (Views: 14.3ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:23:04 -0400
+Processing by BandsController#create as JS
+  Parameters: {"utf8"=>"✓", "band"=>{"name"=>"A Few Good Men"}, "commit"=>"add artist"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "A Few Good Men"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["band_id", 327], ["created_at", "2015-04-01 14:23:04.641650"], ["updated_at", "2015-04-01 14:23:04.641650"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'andrewou' AND "users"."id" != 7) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xxx@gamil.com' AND "users"."id" != 7) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (9.1ms)
+Completed 200 OK in 25ms (Views: 16.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:25:53 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.8ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.4ms)
+  Rendered bands/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/band-8b6092996681bda622b8d0c3228a8649.js?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/application-be09514bbf498bfba0fdf591a7c103f1.js?body=1" for ::1 at 2015-04-01 10:25:53 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:57 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:57 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:57 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:25:57 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:25:57 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:29:05 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered bands/_band.html.erb (0.4ms)
+  Rendered bands/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/band-6beafc9d0dcc7dddb5392191e1caa22f.js?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/assets/application-d717ebc8c8f8da05df303135c581c2b1.js?body=1" for ::1 at 2015-04-01 10:29:06 -0400
+
+
+Started GET "/logout" for ::1 at 2015-04-01 10:29:15 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:29:15 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:15 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:15 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:15 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:29:15 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:29:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:29:15 -0400
+
+
+Started GET "/login" for ::1 at 2015-04-01 10:29:16 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:16 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:16 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:16 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:29:16 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:29:16 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:29:16 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:16 -0400
+
+
+Started POST "/sessions" for ::1 at 2015-04-01 10:29:17 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1SOeJrzTRSqU5HHokSO7nY9EdOYPXFX62w0oZQp/uEH9K4+ppnCqMjuBr/TtfHZD9yxc6c8e3Q6h4wIjt+tCSg==", "user"=>{"email"=>"cghazanfar10@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "cghazanfar10@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 70ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:29:17 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.2ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:18 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:18 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:18 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:29:18 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:29:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:29:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:29:18 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:30:24 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.6ms)
+  Rendered bands/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 57ms (Views: 53.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/band-15112eaa2a65b15184e17d01c8c4ff49.js?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/assets/application-751210e3a8d8bbfceb9338cef6f10f4f.js?body=1" for ::1 at 2015-04-01 10:30:24 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:31:26 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.2ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/band-247bc573245679f960f3aae1c198f8b7.js?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/assets/application-82c2ff531fc3ca5baa8c63180a68d6ab.js?body=1" for ::1 at 2015-04-01 10:31:26 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:36:40 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.1ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/band-9d945d0612aefef291664310e16ecd7d.js?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started GET "/assets/application-e615768738f9171373f93ec54dd4f81f.js?body=1" for ::1 at 2015-04-01 10:36:40 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:36:52 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UxZRPhuAeHVPcFtbO0gBYUdShN0/h7sIiApzMX/37eF7HkCxASOXbeAVhUdHF8y/Pzqs0v/FM/zy5Fl3wmMX6g==", "band"=>{"name"=>"A Lot like Birds"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "A Lot like Birds"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["band_id", 331], ["created_at", "2015-04-01 14:36:52.049100"], ["updated_at", "2015-04-01 14:36:52.049100"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.0ms)
+Completed 200 OK in 33ms (Views: 15.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:37:50 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (1.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.8ms)
+  Rendered bands/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/band-9d945d0612aefef291664310e16ecd7d.js?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started GET "/assets/application-e615768738f9171373f93ec54dd4f81f.js?body=1" for ::1 at 2015-04-01 10:37:50 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:38:16 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sx5SrXfXhkznAIa95FZyja96ftom3iPdNWW/r/dfnoqbFkMibXRpVEhlWKGYCb9T1xJW1eacqylPi5XpSstkgQ==", "band"=>{"name"=>"Acappella"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.1ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Acappella"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["band_id", 365], ["created_at", "2015-04-01 14:38:16.871848"], ["updated_at", "2015-04-01 14:38:16.871848"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (7.2ms)
+Completed 200 OK in 34ms (Views: 16.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:39:17 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.7ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/band-9d945d0612aefef291664310e16ecd7d.js?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started GET "/assets/application-e615768738f9171373f93ec54dd4f81f.js?body=1" for ::1 at 2015-04-01 10:39:17 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:39:43 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jn2zHKXM7qaRplam7LqmshCGoYpoNecZunyixz8hzoemdaKTv28Bvj7DiLqQ5WtsaO6Jhah3b+3AkoiBgrU0jA==", "band"=>{"name"=>"Academy of Ancient Music"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Academy of Ancient Music"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["band_id", 364], ["created_at", "2015-04-01 14:39:43.637801"], ["updated_at", "2015-04-01 14:39:43.637801"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (7.0ms)
+Completed 200 OK in 29ms (Views: 16.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:40:42 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.8ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.5ms)
+  Rendered bands/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/band-52c050916414ebe400d82b15832cb65b.js?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started GET "/assets/application-b6cf7e37d3dd148f05d093b58ea5a240.js?body=1" for ::1 at 2015-04-01 10:40:42 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:40:51 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qInVlX4KsqzwPW5IFy2QP1YCtwzxpnohKIVYGKVAkGaAgcQaZKldtF9YsFRrcl3hLmqfAzHk8tVSa3JeGNRqbQ==", "band"=>{"name"=>"Ace Enders"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.1ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Ace Enders"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["band_id", 367], ["created_at", "2015-04-01 14:40:51.274874"], ["updated_at", "2015-04-01 14:40:51.274874"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/create.js.erb (7.1ms)
+Completed 200 OK in 24ms (Views: 14.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:12 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:12 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:12 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:41:12 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:12 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:41:58 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.8ms)
+  Rendered bands/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/band-52c050916414ebe400d82b15832cb65b.js?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started GET "/assets/application-b6cf7e37d3dd148f05d093b58ea5a240.js?body=1" for ::1 at 2015-04-01 10:41:58 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:42:13 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nDUVF7cFZILSU7nd5geu1MkdHYELqad87/YUyijFdcW0PQSYraaLmn02Z8GaWGMKsXU1jsvrL4iVGD6MlVGPzg==", "band"=>{"name"=>"Ace Hood"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Ace Hood"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["band_id", 368], ["created_at", "2015-04-01 14:42:13.261417"], ["updated_at", "2015-04-01 14:42:13.261417"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (5.6ms)
+Completed 200 OK in 21ms (Views: 12.4ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:42:16 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nDUVF7cFZILSU7nd5geu1MkdHYELqad87/YUyijFdcW0PQSYraaLmn02Z8GaWGMKsXU1jsvrL4iVGD6MlVGPzg==", "band"=>{"name"=>"Ace Hood"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.1ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Ace Hood"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["band_id", 368], ["created_at", "2015-04-01 14:42:16.767049"], ["updated_at", "2015-04-01 14:42:16.767049"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (5.8ms)
+Completed 200 OK in 22ms (Views: 13.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:42:55 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.7ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.6ms)
+  Rendered bands/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 62ms (Views: 43.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/band-52c050916414ebe400d82b15832cb65b.js?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started GET "/assets/application-b6cf7e37d3dd148f05d093b58ea5a240.js?body=1" for ::1 at 2015-04-01 10:42:55 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:43:19 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zxi2PyHR1ZJ0/wlIfvygULC8CTbHhFKSx5wtkgnIam3nEKewO3I6itua11QCo22OyNQhOQfG2ma9cgfUtFyQZg==", "band"=>{"name"=>"Ace of Base"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Ace of Base"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["band_id", 369], ["created_at", "2015-04-01 14:43:19.309166"], ["updated_at", "2015-04-01 14:43:19.309166"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/create.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 60ms (Views: 43.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1&_=1427899375384" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1&_=1427899375385" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/band-52c050916414ebe400d82b15832cb65b.js?body=1&_=1427899375386" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/assets/application-b6cf7e37d3dd148f05d093b58ea5a240.js?body=1&_=1427899375387" for ::1 at 2015-04-01 10:43:19 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:44:58 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.9ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.6ms)
+  Rendered bands/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:44:58 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:44:58 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:44:58 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:44:58 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:44:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:44:59 -0400
+
+
+Started GET "/assets/band-52c050916414ebe400d82b15832cb65b.js?body=1" for ::1 at 2015-04-01 10:44:59 -0400
+
+
+Started GET "/assets/application-b6cf7e37d3dd148f05d093b58ea5a240.js?body=1" for ::1 at 2015-04-01 10:44:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:44:59 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:45:32 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1sI+91rf7LtkrU8hdZyTzkPkoHKi7U78pXNpjPm2H+H+yi94QHwDo8vIkT0Jw14QO4yIfWKvxgjfnUPKRCLl6g==", "band"=>{"name"=>"Ace Wilder"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.1ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Ace Wilder"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["band_id", 370], ["created_at", "2015-04-01 14:45:32.559135"], ["updated_at", "2015-04-01 14:45:32.559135"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Cyrus Ghazanfar' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'cghazanfar10@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.4ms)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:46:52 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.1ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (1.1ms)
+  Rendered bands/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/band-4f35780a78b6bb2168d14fa2b04fef45.js?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/assets/application-21fbd4b0cf1f26b0b5348474b00f38ac.js?body=1" for ::1 at 2015-04-01 10:46:52 -0400
+
+
+Started GET "/logout" for ::1 at 2015-04-01 10:46:53 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:46:53 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:53 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:53 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:53 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:46:53 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:53 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:46:53 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:46:53 -0400
+
+
+Started GET "/login" for ::1 at 2015-04-01 10:46:55 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:55 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:55 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:55 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:46:55 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:46:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:46:55 -0400
+
+
+Started GET "/signup" for ::1 at 2015-04-01 10:46:57 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:46:57 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:57 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:57 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:46:57 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:46:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:46:57 -0400
+
+
+Started POST "/users" for ::1 at 2015-04-01 10:47:05 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7/SXCzPJsn3TFsHrSckV5z9gOY1HNN9z9nziIKkax4r6TIuOHrXFC1ndXdmrwq8BEzzZZx/6YVntzMNoHJ1Vig==", "user"=>{"name"=>"Sophie", "email"=>"sophie.debenedetto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Sophie' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sophie.debenedetto@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Sophie"], ["email", "sophie.debenedetto@gmail.com"], ["password_digest", "$2a$10$gdBFuV3ZVEz0qAhYyGhJP.VTf0zmjIsdqHet7QhzpSGWFqi0hU0w."], ["created_at", "2015-04-01 14:47:05.636138"], ["updated_at", "2015-04-01 14:47:05.636138"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/cyrusghazanfar/Desktop/whereismyband/app/controllers/users_controller.rb:13)
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.3ms)
+
+UserMailer#welcome_email: processed outbound mail in 140.9ms
+
+Sent mail to sophie.debenedetto@gmail.com (319.2ms)
+Date: Wed, 01 Apr 2015 10:47:05 -0400
+From: sophie.debenedetto@gmail.com
+To: sophie.debenedetto@gmail.com
+Message-ID: <551c04e9c16dc_59a13ff544df7c5c77799@Cyruss-MacBook-Pro.local.mail>
+Subject: Welcome to our site!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+      <h1>Welcome to example.com, Sophie</h1>
+    
+    <p>
+      Now you can start adding artists to your list and recieving updates whenever there are new shows!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 543ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:47:06 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered bands/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:06 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:06 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:06 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:47:06 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:47:06 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:06 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:47:06 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:47:13 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uAczNpK0WQNdGqhBqzTtFEi64Sq4btQCeEuOFc4iBjitvy+zv8guddfRNHNJP1fyZOYBwOCgaihj+69de6WUOA==", "band"=>{"name"=>"Ace Wilder"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.1ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Ace Wilder"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["band_id", 370], ["created_at", "2015-04-01 14:47:13.333746"], ["updated_at", "2015-04-01 14:47:13.333746"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Sophie' AND "users"."id" != 8) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'sophie.debenedetto@gmail.com' AND "users"."id" != 8) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.js.erb (6.0ms)
+Completed 200 OK in 22ms (Views: 13.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:47:33 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (0.4ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 8]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/band-4f35780a78b6bb2168d14fa2b04fef45.js?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started GET "/assets/application-21fbd4b0cf1f26b0b5348474b00f38ac.js?body=1" for ::1 at 2015-04-01 10:47:33 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:47:36 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uisZix/xhwGogMkVkYbPbqyULfj5YQ1x6X4L27GzHf+vkwUOMo3wdyJLVSdzjXWIgMjNEqGvs1vyziqTBDSP/w==", "band"=>{"name"=>"Ace of Base"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Ace of Base"]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 8], ["band_id", 369], ["created_at", "2015-04-01 14:47:36.694054"], ["updated_at", "2015-04-01 14:47:36.694054"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Sophie' AND "users"."id" != 8) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'sophie.debenedetto@gmail.com' AND "users"."id" != 8) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/create.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 82ms (Views: 61.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:48:28 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 8]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 58ms (Views: 41.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1&_=1427899653627" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1&_=1427899653628" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/band-4f35780a78b6bb2168d14fa2b04fef45.js?body=1&_=1427899653629" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/application-21fbd4b0cf1f26b0b5348474b00f38ac.js?body=1&_=1427899653630" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/band-4f35780a78b6bb2168d14fa2b04fef45.js?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started GET "/assets/application-21fbd4b0cf1f26b0b5348474b00f38ac.js?body=1" for ::1 at 2015-04-01 10:48:28 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:48:35 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TFAh6c1WFLpPy3Mja0jhZzGl8RFeX6IAgdCZU4C+qi9Z6D1s4CpjzMUA7xGJQ1uBHfkR+waRHCqaYLgbNTk4Lw==", "band"=>{"name"=>"Academy of Ancient Muisc"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Academy of Ancient Muisc"]]
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::AssociationTypeMismatch (Band(#70322616952800) expected, got NilClass(#70322607297080)):
+  app/controllers/bands_controller.rb:14:in `create'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (39.7ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (30.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (65.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:48:44 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.4ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 8]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/band-4f35780a78b6bb2168d14fa2b04fef45.js?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started GET "/assets/application-21fbd4b0cf1f26b0b5348474b00f38ac.js?body=1" for ::1 at 2015-04-01 10:48:44 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:48:50 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wjy7QMDrXpPA/V/eHNq9XWadpDhfcUxATRCMSq2WHftPhKfF7Zcp5Uo2w+z+0Qe7SsFE0ge/8mpWoK0CGBGP+w==", "band"=>{"name"=>"Academy of Ancient Music"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "Academy of Ancient Music"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["band_id", 364], ["created_at", "2015-04-01 14:48:50.443885"], ["updated_at", "2015-04-01 14:48:50.443885"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Sophie' AND "users"."id" != 8) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'sophie.debenedetto@gmail.com' AND "users"."id" != 8) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (6.6ms)
+Completed 200 OK in 33ms (Views: 12.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:52:06 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wjy7QMDrXpPA/V/eHNq9XWadpDhfcUxATRCMSq2WHftPhKfF7Zcp5Uo2w+z+0Qe7SsFE0ge/8mpWoK0CGBGP+w==", "band"=>{"name"=>"Adele"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Adele"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 8], ["band_id", 388], ["created_at", "2015-04-01 14:52:06.823140"], ["updated_at", "2015-04-01 14:52:06.823140"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Sophie' AND "users"."id" != 8) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'sophie.debenedetto@gmail.com' AND "users"."id" != 8) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (5.4ms)
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:52:47 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 8]]
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/band-ff4b118e835b9d22f5d34d30ea27a72e.js?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started GET "/assets/application-9ca84747a1f197f30b985caec5c3c88d.js?body=1" for ::1 at 2015-04-01 10:52:48 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:53:01 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zyrmAwc778DMEHSghMGRwn8mjiJJivNGHrd63X4tUxbakvqGKkeYtkbb6JJmyiskU3puyBFETWwFB1uVy6rBFg==", "band"=>{"name"=>"A Few Good Men"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "A Few Good Men"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["band_id", 327], ["created_at", "2015-04-01 14:53:01.624882"], ["updated_at", "2015-04-01 14:53:01.624882"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Sophie' AND "users"."id" != 8) LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'sophie.debenedetto@gmail.com' AND "users"."id" != 8) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (6.3ms)
+Completed 200 OK in 21ms (Views: 12.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 10:56:18 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 8]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:56:18 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 10:56:18 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:56:18 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:56:18 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:56:18 -0400
+
+
+Started GET "/assets/application-9c81c0333bba0bdca3fe723c31c8d7e7.css?body=1" for ::1 at 2015-04-01 10:56:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:56:19 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:56:19 -0400
+
+
+Started GET "/assets/band-ff4b118e835b9d22f5d34d30ea27a72e.js?body=1" for ::1 at 2015-04-01 10:56:19 -0400
+
+
+Started GET "/assets/application-9ca84747a1f197f30b985caec5c3c88d.js?body=1" for ::1 at 2015-04-01 10:56:19 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:57:30 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 8]]
+  Rendered bands/_band.html.erb (0.2ms)
+  Rendered bands/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 63ms (Views: 59.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/application-9c81c0333bba0bdca3fe723c31c8d7e7.css?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/band-5993507ebcb10a65e6d325f8503317e2.js?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/assets/application-419436e720be68fe840c82014f2eb5e4.js?body=1" for ::1 at 2015-04-01 10:57:30 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 10:59:05 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (1.0ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 8]]
+  Rendered bands/_band.html.erb (0.3ms)
+  Rendered bands/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/application-9c81c0333bba0bdca3fe723c31c8d7e7.css?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/band-7197da841c6f4b4c260439a3ff2a989f.js?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started GET "/assets/application-5c828fc9a0e3f929ba5f099e65e1caef.js?body=1" for ::1 at 2015-04-01 10:59:05 -0400
+
+
+Started POST "/bands" for ::1 at 2015-04-01 10:59:19 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6w9RbgwYi0YsgGKQ1gVsurXjGkGVWNap8ieNs3N/ri7+t03rIWT8MKZL/qI0DtZcmb/6q82WaIPpl6z7xvg8Lg==", "band"=>{"name"=>"Abysmal Dawn"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1  [["name", "Abysmal Dawn"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_bands" ("user_id", "band_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 8], ["band_id", 361], ["created_at", "2015-04-01 14:59:19.670562"], ["updated_at", "2015-04-01 14:59:19.670562"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Sophie' AND "users"."id" != 8) LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'sophie.debenedetto@gmail.com' AND "users"."id" != 8) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered bands/_band.html.erb (0.1ms)
+  Rendered bands/create.html.erb (5.3ms)
+Completed 200 OK in 21ms (Views: 11.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/bands" for ::1 at 2015-04-01 11:00:00 -0400
+Processing by BandsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6w9RbgwYi0YsgGKQ1gVsurXjGkGVWNap8ieNs3N/ri7+t03rIWT8MKZL/qI0DtZcmb/6q82WaIPpl6z7xvg8Lg==", "band"=>{"name"=>"ace of base"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "ace of base"]]
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::AssociationTypeMismatch (Band(#70322616952800) expected, got NilClass(#70322607297080)):
+  app/controllers/bands_controller.rb:14:in `create'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (42.5ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (27.9ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (65.4ms)
