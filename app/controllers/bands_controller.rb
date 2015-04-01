@@ -1,5 +1,7 @@
 class BandsController < ApplicationController
 
+  before_action :login_required, only: [:create]
+  
   def new
     @band = Band.new
     @user = current_user
