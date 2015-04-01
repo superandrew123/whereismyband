@@ -17257,3 +17257,747 @@ Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "bands" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "A Few Good Men"], ["created_at", "2015-03-31 19:33:03.834919"], ["updated_at", "2015-03-31 19:33:03.834919"]]
   [1m[36m (7.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-03-31 21:34:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mBand Load (3.1ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered bands/new.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 338ms (Views: 238.7ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:46 -0400
+
+
+Started GET "/logout" for ::1 at 2015-03-31 21:34:50 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 21:34:50 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:34:51 -0400
+
+
+Started GET "/signup" for ::1 at 2015-03-31 21:34:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 131ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:34:52 -0400
+
+
+Started POST "/users" for ::1 at 2015-03-31 21:35:05 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nZBJNISezA/p0gKFiGDQ7NDzEpE1hwNp+hO7TfETSMIwpAM9k6BWDo3x9fsfGHq3eOBlX8cFE2Rf+fUDSPUBvQ==", "user"=>{"name"=>"Sophie", "email"=>"sophie.debenedetto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Sophie' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sophie.debenedetto@gmail.com' LIMIT 1
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sophie"], ["email", "sophie.debenedetto@gmail.com"], ["password_digest", "$2a$10$rzDntY0jS.1dCPv.Zp2wP.1px8KzstLHjg3G48dy2J4zA1EZrZ8HK"], ["created_at", "2015-04-01 01:35:05.495957"], ["updated_at", "2015-04-01 01:35:05.495957"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Completed 500 Internal Server Error in 107ms
+
+NoMethodError (undefined method `welcome_email' for UserMailer:Class):
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.2ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 6]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/signup" for ::1 at 2015-03-31 21:35:59 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 81ms (Views: 69.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:35:59 -0400
+
+
+Started POST "/users" for ::1 at 2015-03-31 21:36:11 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"riyy6pzvrg1lihX8A0rga04d64gotuap9sFLjLrNX/IDGPjji9E0DAGp4oKUMkow5g6cRto09qRTKwXCAysWjQ==", "user"=>{"name"=>"Sophie", "email"=>"sophie.debenedetto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Sophie' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sophie.debenedetto@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Sophie"], ["email", "sophie.debenedetto@gmail.com"], ["password_digest", "$2a$10$HWraQ/TCFJhQ/YP/IGHj3.fxekYDHB0LL/kfKoAwendV/ZpGwCa5S"], ["created_at", "2015-04-01 01:36:11.169968"], ["updated_at", "2015-04-01 01:36:11.169968"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 98ms
+
+NoMethodError (undefined method `mail' for UserMailer:Class):
+  app/mailers/user_mailer.rb:5:in `welcome_email'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.9ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (37.6ms)
+
+
+Started PUT "/console/repl_sessions/b4b7d7095e0cbb1904c7d0baf8b12ead" for ::1 at 2015-03-31 21:37:57 -0400
+
+
+Started PUT "/console/repl_sessions/b4b7d7095e0cbb1904c7d0baf8b12ead" for ::1 at 2015-03-31 21:38:02 -0400
+
+
+Started PUT "/console/repl_sessions/b4b7d7095e0cbb1904c7d0baf8b12ead" for ::1 at 2015-03-31 21:38:08 -0400
+
+
+Started PUT "/console/repl_sessions/b4b7d7095e0cbb1904c7d0baf8b12ead" for ::1 at 2015-03-31 21:38:16 -0400
+
+
+Started PUT "/console/repl_sessions/b4b7d7095e0cbb1904c7d0baf8b12ead" for ::1 at 2015-03-31 21:38:17 -0400
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 7]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+
+
+Started POST "/users" for ::1 at 2015-03-31 21:41:14 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"riyy6pzvrg1lihX8A0rga04d64gotuap9sFLjLrNX/IDGPjji9E0DAGp4oKUMkow5g6cRto09qRTKwXCAysWjQ==", "user"=>{"name"=>"Sophie", "email"=>"sophie.debenedetto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Sophie' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sophie.debenedetto@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sophie"], ["email", "sophie.debenedetto@gmail.com"], ["password_digest", "$2a$10$U16EzIbt85YTE0ejiJn23eO1B1T3ftQOR/1XMwVoOh8SrWMYJvZe."], ["created_at", "2015-04-01 01:41:14.161805"], ["updated_at", "2015-04-01 01:41:14.161805"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from deliver at /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionmailer-4.2.0/lib/action_mailer/message_delivery.rb:99)
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+
+UserMailer#welcome_email: processed outbound mail in 186.7ms
+
+Sent mail to sophie.debenedetto@gmail.com (854.4ms)
+Date: Tue, 31 Mar 2015 21:41:14 -0400
+From: sophie.debenedetto@gmail.com
+To: sophie.debenedetto@gmail.com
+Message-ID: <551b4cba5b6d2_49733fd3ba6a59b489416@Sophies-MacBook-Pro.local.mail>
+Subject: Welcome to our site!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+      <h1>Welcome to example.com, Sophie</h1>
+    
+    <p>
+      Now you can start adding artists to your list and recieving updates whenever there are new shows!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1155ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 21:41:15 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBand Load (0.5ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 8]]
+  Rendered bands/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 88ms (Views: 72.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:41:15 -0400
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  COMMIT
+
+
+Started GET "/logout" for ::1 at 2015-03-31 21:42:36 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 21:42:36 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:42:37 -0400
+
+
+Started GET "/signup" for ::1 at 2015-03-31 21:42:38 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 110ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:42:38 -0400
+
+
+Started POST "/users" for ::1 at 2015-03-31 21:42:43 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+veUDPkENwIRJ4fFb0etn6l2Bf7IyYdhcYiaLXDGy4SgFRnuxdzqlryCEvaLCMQfIs0VLyHR+fgOINkau4Qr+w==", "user"=>{"name"=>"Sophie", "email"=>"sophie.debenedetto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Sophie' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sophie.debenedetto@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 156ms (Views: 73.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:42:44 -0400
+
+
+Started POST "/users" for ::1 at 2015-03-31 21:42:50 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yhsbh/pVzzdUOWw0QDmKTJpR7F5r9/9vrGu1CNACf2o4+ZZlxo0So/mc+QekduPMEer8j4LvgfbTw/Y/G0CfFQ==", "user"=>{"name"=>"Sophie", "email"=>"sophie.debenedetto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Sophie' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sophie.debenedetto@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Sophie"], ["email", "sophie.debenedetto@gmail.com"], ["password_digest", "$2a$10$jUx9nt7o0HTPyK2YyJNdFe3/T7Zsm3Z6vTM6mci0dcY4dHlzCyq8u"], ["created_at", "2015-04-01 01:42:50.943873"], ["updated_at", "2015-04-01 01:42:50.943873"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from deliver at /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionmailer-4.2.0/lib/action_mailer/message_delivery.rb:99)
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+
+UserMailer#welcome_email: processed outbound mail in 5.7ms
+
+Sent mail to sophie.debenedetto@gmail.com (2494.6ms)
+Date: Tue, 31 Mar 2015 21:42:50 -0400
+From: sophie.debenedetto@gmail.com
+To: sophie.debenedetto@gmail.com
+Message-ID: <551b4d1ae8e1c_49733fd3bd6052b88958d@Sophies-MacBook-Pro.local.mail>
+Subject: Welcome to our site!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+      <h1>Welcome to example.com, Sophie</h1>
+    
+    <p>
+      Now you can start adding artists to your list and recieving updates whenever there are new shows!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2587ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 21:42:53 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered bands/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 21:42:53 -0400
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 9]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/logout" for ::1 at 2015-03-31 22:04:50 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 22:04:50 -0400
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 22:04:50 -0400
+
+
+Started GET "/signup" for ::1 at 2015-03-31 22:04:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 22:04:52 -0400
+
+
+Started POST "/users" for ::1 at 2015-03-31 22:04:58 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5gucbeE9N0/8/YiO3EuWcJ99AW77GaNjKLsIym0MHrD+uAeHxeU8JTNmJdU7p6oiIZlLAVHRBwbHO4mhgyyEKQ==", "user"=>{"name"=>"Sophie", "email"=>"sophie.debenedetto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Sophie' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sophie.debenedetto@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sophie"], ["email", "sophie.debenedetto@gmail.com"], ["password_digest", "$2a$10$uBrG8dLdUm9P8lfxMzGeIek8PRg.lnOkx9zX2ay3sfQMZQP2J9oHe"], ["created_at", "2015-04-01 02:04:58.914067"], ["updated_at", "2015-04-01 02:04:58.914067"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from deliver at /Users/SophieDeBenedetto/.rvm/gems/ruby-2.1.4@global/gems/actionmailer-4.2.0/lib/action_mailer/message_delivery.rb:99)
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+
+UserMailer#welcome_email: processed outbound mail in 7.3ms
+
+Sent mail to sophie.debenedetto@gmail.com (2379.9ms)
+Date: Tue, 31 Mar 2015 22:04:58 -0400
+From: sophie.debenedetto@gmail.com
+To: sophie.debenedetto@gmail.com
+Message-ID: <551b524ae2024_49733fd3bd72dd5c896c8@Sophies-MacBook-Pro.local.mail>
+Subject: Welcome to our site!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+      <h1>Welcome to example.com, Sophie</h1>
+    
+    <p>
+      Now you can start adding artists to your list and recieving updates whenever there are new shows!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2472ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 22:05:01 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mBand Load (0.7ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 10]]
+  Rendered bands/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 74ms (Views: 71.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/bands-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/user-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+
+
+Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
