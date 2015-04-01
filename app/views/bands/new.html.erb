@@ -1,13 +1,18 @@
-<%= form_for @band do |f| %>
+<p class="hidden-alert" id="duplication-alert">This artist has already been added.</p>
+
+<%= form_for @band, class: "new-band" do |f| %>
 <%= f.label :name%>
-<%= f.text_field :name%>
+<%= f.text_field :name, class: "band-name"%>
 <%= f.submit "add artist" %>
 <%end%><br><br>
-
-<% if current_user%>
-	<ul>
-		<%@user.bands.each do |band|%>
-	    <li><%=band.name%></li>	
-		<%end%>
-	</ul>
+<% if current_user %>
+	<section>
+		<ul class="band-list">
+			<%= render current_user.bands %>
+		</ul>
+	</section>
 <%end%>
+
+
+
+

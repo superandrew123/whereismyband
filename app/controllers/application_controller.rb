@@ -24,4 +24,14 @@ class ApplicationController < ActionController::Base
 
   helper_method :logged_in?
 
+  def login_required
+    if !logged_in?
+      flash[:notice] = "Log In to add artists and recieve notifications of upcoming events!"
+      @band = Band.new
+      redirect_to login_path
+    end
+  end
+
+  helper_method :login_required
+
 end

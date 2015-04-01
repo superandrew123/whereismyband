@@ -1,5 +1,7 @@
 class BandsController < ApplicationController
 
+  before_action :login_required, only: [:create]
+
   def new
     @band = Band.new
     @user = current_user
@@ -11,7 +13,7 @@ class BandsController < ApplicationController
     @user = current_user
     @user.bands << @band
     @user.save
-    redirect_to root_path
+    render :layout => false
   end
 
 
