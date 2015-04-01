@@ -6,9 +6,10 @@ function checkForDuplicate() {
 	$(".new_band").on("submit", function(e){
 		e.preventDefault();
 		e.stopPropagation();
-		var $formVal = $(".band-name").val();
-		var $ulVal = $(".band-list").html();
+		var $formVal = $(".band-name").val().toLowerCase();
+		var $ulVal = $(".band-list").html().toLowerCase();
 		if (($ulVal.indexOf($formVal)) >= 0) {
+			// debugger;
 			$("#duplication-alert").removeClass("hidden-alert");
 			artistFound();
 		} else {
@@ -24,7 +25,6 @@ function submitBand(form) {
 	var data = form.serialize();
 	var url = form.attr("action");
 	var method = form.attr("method");
-
 	$.ajax(url, {
 		method: method,
 		data: data,
