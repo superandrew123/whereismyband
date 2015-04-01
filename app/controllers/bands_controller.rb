@@ -16,8 +16,8 @@ class BandsController < ApplicationController
       # flash.now[:notice] = "Could not find that artist"
       render :layout => false
     elsif @user.bands.include?(@band)
-      flash.now[:notice] = "Artist already added"
-      render :new
+      flash.now[:notice] = "Artist already added TEST"
+      render :layout => false
     else
       # flash.now[:notice] = "TEST"
       @user.bands << @band
@@ -37,13 +37,13 @@ class BandsController < ApplicationController
     def sanitize_params
        params.require(:band).permit(:name)
     end
-    
+
     def band_params
       band_hash = Hash.new
       sanitize_params.each do |k, v|
-        if k == "name" 
-          band_hash[:search_name] = v.downcase
-        end 
+        if k == "name"
+          band_hash[:search_name] = v.downcase.strip
+        end
       end
       band_hash
     end
