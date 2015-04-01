@@ -12,7 +12,7 @@ function checkForDuplicate() {
 		if ($ulVal != undefined){
 			$ulVal = $(".band-list").html().toLowerCase();
 			if (($ulVal.indexOf($formVal)) >= 0) {
-				// debugger;
+       // // debugger;
 				$("#duplication-alert").removeClass("hidden-alert");
 				artistFound();
 			} else {
@@ -31,12 +31,12 @@ function submitBand(form) {
 	var url = form.attr("action");
 	var method = form.attr("method");
 	console.log("hi from submitBand");
-	debugger;
+ // debugger;
 	$.ajax(url, {
 		method: method,
 		data: data,
 		success: function(response) {
-			debugger;
+   // debugger;
 			$('ul.band-list').prepend(response);
 			$('.band-name').val("");
 		}

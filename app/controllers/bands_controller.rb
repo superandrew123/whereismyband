@@ -9,7 +9,6 @@ class BandsController < ApplicationController
 
 
   def create
-    binding.pry
     @band = Band.find_by(band_params)
     @user = current_user
     if !@band

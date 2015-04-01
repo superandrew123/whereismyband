@@ -10,12 +10,10 @@
 <% flash.each do |name, msg| %>
    <%= content_tag :div, msg, :id => "flash#{name}" %>
  <% end %>
+<%= render "shared_partial/navbar" %>
 
- <nav class="list-inline">
-    <li><%= login_or_logout %></li>
-  </nav>
-
-<%= yield %>
-
+<div class="container">
+	<%= yield %>
+</div>
 </body>
 </html>
