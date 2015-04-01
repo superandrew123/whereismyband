@@ -9,6 +9,7 @@ class BandsController < ApplicationController
 
 
   def create
+    binding.pry
     @band = Band.find_by(band_params)
     @user = current_user
     if !@band
@@ -27,7 +28,17 @@ class BandsController < ApplicationController
 
 
   private
+
+    def sanitize_params
+       params.require(:band).permit(:name)
+    end
+    
     def band_params
-      params.require(:band).permit(:name)
+      band_hash = Hash.new
+      sanitize_params.each do |k, v| 
+        band_hash[k] = v.downcase 
+      end
+      band_hash
+      # binding.pry
     end
 end
