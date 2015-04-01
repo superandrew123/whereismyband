@@ -6,7 +6,7 @@ require 'open-uri'
 #-----------------------------------------------------
 
 # [A,B,C....,number]
-ARRAY = ("a".."z").to_a.push("number")
+ARRAY = ("e".."z").to_a.push("number")
 
 ARRAY.each do |letter|
   # Nokogiri object for http://www.billboard.com/artists/(letter)
