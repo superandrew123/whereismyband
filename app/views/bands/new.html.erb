@@ -1,18 +1,24 @@
 <p class="hidden-alert" id="duplication-alert">This artist has already been added.</p>
 <p class="hidden-alert" id="unfound-artist-alert">This artist was not found.</p>
-<%= form_for @band, class: "new-band" do |f| %>
-<%= f.label :name%>
-<%= f.text_field :name, class: "band-name"%>
-<%= f.submit "add artist" %>
-<% end %><br><br>
+
 <% if current_user %>
+	<%= form_for @band, class: "new-band" do |f| %>
+		<%= f.label :name%>
+		<%= f.text_field :name, class: "band-name"%>
+		<%= f.submit "add artist" %>
+	<% end %><br><br>
 	<section>
 		<ul class="band-list">
 			<%= render current_user.bands %>
 		</ul>
 	</section>
+<% else %>
+	<%= form_for @band, method: "GET", url: { controller: "sessions", action: "new" },  :html => {:class => "fake_band"} do |f| %>
+		<%= f.label :name%>
+		<%= f.text_field :name, class: "band-name"%>
+		<%= f.submit "add artist" %>
+	<% end %><br><br>
 <% end %>
-
 
 
 
