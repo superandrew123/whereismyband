@@ -18001,3 +18001,4 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-02d43807b289cf1f63bddc9b5b3992bf.js?body=1" for ::1 at 2015-03-31 22:05:01 -0400
+  [1m[36mBand Load (1.4ms)[0m  [1mSELECT  "bands".* FROM "bands" WHERE "bands"."name" = $1 LIMIT 1[0m  [["name", "ME"]]
