@@ -1,23 +1,44 @@
-// function createBand(e){
-//   e.preventDefault();
-//   var $form = $(this);
-//   var url = $form.attr("action");
-//   debugger;
-//   $.ajax(url, {
-//   	method: "POST",
-//   	data: $form.serialize(),
-//   	success: function(response) {
-//   		debugger;
-//   		$("ul.band-list").prepend(response);
-//   	}
-//   });
-//   // $.post(url, $form.serialize() , function(bandLi){
-//   //   $(".band-name", $form).val("");
-//   //   debugger;
-//   //   $("ul.band-list").prepend(bandLI);
-//   // });
-// };
+$(function(){
 
-// $(function(){
-//   $("form.new-band").on("submit", createBand);
-// });
+checkForDuplicate();
+
+});
+
+
+function checkForDuplicate() {
+	$(".new_band").on("submit", function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		var $formVal = $(".band-name").val();
+		var $ulVal = $(".band-list").html();
+		if (($ulVal.indexOf($formVal)) >= 0) {
+			$("#duplication-alert").removeClass("hidden-alert");
+		}else {
+			$("#duplication-alert").addClass("hidden-alert");
+			 var $form = $(this);
+			 submitBand($form);
+		}
+	});
+}
+
+function submitBand(form) {
+	var data = form.serialize();
+	var url = form.attr("action");
+	var method = form.attr("method");
+
+	$.ajax(url, {
+		method: method,
+		data: data,
+		success: function(response) {
+			debugger;
+			$('ul.band-list').prepend(response);
+			$('.band-name').val("");
+		}
+	});
+}
+
+
+
+
+
+

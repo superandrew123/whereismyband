@@ -1,4 +1,6 @@
-<%= form_for @band, class: "new-band", remote: true do |f| %>
+<p class="hidden-alert" id="duplication-alert">This artist has already been added.</p>
+
+<%= form_for @band, class: "new-band" do |f| %>
 <%= f.label :name%>
 <%= f.text_field :name, class: "band-name"%>
 <%= f.submit "add artist" %>
