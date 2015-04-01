@@ -1,2 +1,6 @@
-<%=render @band %>
-
+<% if @band %>
+	<%=render @band %>
+	<script> artistFound(); </script>
+<%else%>
+	<script> artistNotFound(); </script>
+<% end %>
