@@ -10,19 +10,24 @@
 				<%= f.text_field :name, class: "band-name btn btn-lg btn-block"%>
 				<%= f.submit "add artist" %>
 			<% end %><br><br>
-			<section>
-				<ul class="band-list">
-					<%= render current_user.bands %>
-				</ul>
-			</section>
 		<% else %>
 			<%= form_for @band, method: "GET", url: { controller: "sessions", action: "new" },  :html => {:class => "fake_band"} do |f| %>
 				<%= f.label :name%>
 				<%= f.text_field :name, class: "band-name btn btn-lg btn-block"%>
-				<%= f.submit "add artist" %>
+				<%= f.submit "add artist", :style => "display: none;" %>
 			<% end %><br><br>
 		<% end %>
 	</div>
+</div>
+<div class="row">
+	<div class="col-md-3">
+	</div>
+	<div class="col-md-6">
+		<section>
+			<ul class="band-list">
+				<%= render current_user.bands %>
+			</ul>
+		</section>
 </div>
 
 

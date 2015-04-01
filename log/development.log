@@ -38507,3 +38507,654 @@ Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at
 
 
 Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:20:42 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:30:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BandsController#new as HTML
+  Rendered bands/new.html.erb within layouts/application (11.8ms)
+  Rendered shared_partial/_navbar.html.erb (0.6ms)
+Completed 200 OK in 109ms (Views: 83.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:30:21 -0400
+
+
+Started GET "/login" for ::1 at 2015-04-01 17:30:25 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 48.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:30:25 -0400
+
+
+Started POST "/sessions" for ::1 at 2015-04-01 17:30:26 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"klLrjB1YkN/2v3ZoRjow33j6Pgo8lXnlCpM7/Lne1S+ED1LtMsut6CLxDROQXgGzK9Zkr3sVMft2aLSj9hO7pg==", "user"=>{"email"=>"cghazanfar10@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "cghazanfar10@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 75ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 17:30:26 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.0ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (1.3ms)
+  Rendered bands/new.html.erb within layouts/application (25.2ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 71.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:30:26 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:30:46 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (1.0ms)
+  Rendered bands/new.html.erb within layouts/application (6.2ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:30:46 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:31:22 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.6ms)
+  Rendered bands/new.html.erb within layouts/application (5.4ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:31:22 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:31:51 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.9ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.9ms)
+  Rendered bands/new.html.erb within layouts/application (5.1ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:31:51 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:32:27 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.7ms)
+  Rendered bands/new.html.erb within layouts/application (5.1ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:32:27 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:32:44 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.8ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.6ms)
+  Rendered bands/new.html.erb within layouts/application (9.5ms)
+  Rendered shared_partial/_navbar.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:32:44 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:32:50 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.7ms)[0m  SELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.6ms)
+  Rendered bands/new.html.erb within layouts/application (7.2ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:32:50 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:33:22 -0400
+Processing by BandsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered bands/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/cyrusghazanfar/Desktop/whereismyband/app/views/bands/new.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...( f.submit "add artist" display: 'hidden' );@output_buffer.s...
+...                               ^):
+  app/views/bands/new.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (31.6ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cyrusghazanfar/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (67.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 17:34:07 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.5ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.6ms)
+  Rendered bands/new.html.erb within layouts/application (4.2ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:34:07 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:34:15 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.8ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.8ms)
+  Rendered bands/new.html.erb within layouts/application (5.3ms)
+  Rendered shared_partial/_navbar.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:34:15 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:34:16 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.7ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (1.1ms)
+  Rendered bands/new.html.erb within layouts/application (5.5ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:34:16 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:34:20 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 17:34:45 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (0.7ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (1.0ms)
+  Rendered bands/new.html.erb within layouts/application (5.3ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-377943cb0ea69584d7ff354f1f2a6c91.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/application-0cd827ca833fa5ae0d72c4f44d178573.css?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at 2015-04-01 17:34:45 -0400
+
+
+Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 17:34:45 -0400
