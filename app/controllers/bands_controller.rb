@@ -41,6 +41,5 @@ class BandsController < ApplicationController
         end 
       end
       band_hash
-      # binding.pry
     end
 end
