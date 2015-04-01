@@ -10,6 +10,8 @@ task :console do
   Pry.start
 end
 
+
 task :searchify do
 	Searchify.start
 end
+
