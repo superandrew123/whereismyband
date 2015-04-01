@@ -9,13 +9,14 @@ class BandsController < ApplicationController
 
 
   def create
+    binding.pry
     @band = Band.find_by(band_params)
     @user = current_user
     if !@band
       # flash.now[:notice] = "Could not find that artist"
       render :layout => false    
     elsif @user.bands.include?(@band)
-      flash.now[:notice] = "Artist already added TEST"
+      flash.now[:notice] = "Artist already added"
       render :layout => false   
     else
       # flash.now[:notice] = "TEST"
@@ -27,7 +28,6 @@ class BandsController < ApplicationController
 
 
   private
-
     def sanitize_params
        params.require(:band).permit(:name)
     end

@@ -15,13 +15,11 @@ class ApplicationController < ActionController::Base
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id].present?
   end
-
   helper_method :current_user
 
   def logged_in?
     !!current_user
   end
-
   helper_method :logged_in?
 
   def login_required
@@ -31,7 +29,6 @@ class ApplicationController < ActionController::Base
       redirect_to login_path
     end
   end
-
   helper_method :login_required
 
 end
