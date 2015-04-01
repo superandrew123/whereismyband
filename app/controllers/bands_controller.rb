@@ -11,10 +11,24 @@ class BandsController < ApplicationController
   def create
     @band = Band.find_by(band_params)
     @user = current_user
-    @user.bands << @band
-    @user.save
-    render :layout => false
+    if !@band
+      # flash.now[:notice] = "Could not find that artist"
+      render :layout => false
+    elsif @user.bands.include?(@band)
+      flash.now[:notice] = "Artist already added"
+      render :new
+    else
+      # flash.now[:notice] = "TEST"
+      @user.bands << @band
+      @user.save
+      render :layout => false
+    end
   end
+
+    def destroy
+      @band = Band.find(params[:id])
+      @Band.destroy
+    end
 
 
   private

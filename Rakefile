@@ -6,6 +6,10 @@ require File.expand_path('../config/application', __FILE__)
 Rails.application.load_tasks
 
 
-task :console do 
+task :console do
   Pry.start
+end
+
+task :searchify do
+	Searchify.start
 end

@@ -1,9 +1,6 @@
 $(function(){
-
-checkForDuplicate();
-
+	checkForDuplicate();
 });
-
 
 function checkForDuplicate() {
 	$(".new_band").on("submit", function(e){
@@ -13,10 +10,12 @@ function checkForDuplicate() {
 		var $ulVal = $(".band-list").html();
 		if (($ulVal.indexOf($formVal)) >= 0) {
 			$("#duplication-alert").removeClass("hidden-alert");
-		}else {
+			artistFound();
+		} else {
 			$("#duplication-alert").addClass("hidden-alert");
-			 var $form = $(this);
-			 submitBand($form);
+			artistFound();
+			var $form = $(this);
+			submitBand($form);
 		}
 	});
 }
@@ -30,13 +29,19 @@ function submitBand(form) {
 		method: method,
 		data: data,
 		success: function(response) {
-			debugger;
 			$('ul.band-list').prepend(response);
 			$('.band-name').val("");
 		}
 	});
 }
 
+function artistNotFound(){
+	$("#unfound-artist-alert").removeClass("hidden-alert");
+}
+
+function artistFound(){
+	$("#unfound-artist-alert").addClass("hidden-alert");
+}
 
 
 
