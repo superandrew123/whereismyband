@@ -35,8 +35,10 @@ class BandsController < ApplicationController
     
     def band_params
       band_hash = Hash.new
-      sanitize_params.each do |k, v| 
-        band_hash[k] = v.downcase 
+      sanitize_params.each do |k, v|
+        if k == "name" 
+          band_hash[:search_name] = v.downcase
+        end 
       end
       band_hash
       # binding.pry
