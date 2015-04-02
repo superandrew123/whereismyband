@@ -41769,3 +41769,169 @@ Started GET "/assets/band-beeed54c9042e1c30e4002d244655cf6.js?body=1" for ::1 at
 
 
 Started GET "/assets/application-13ca71269a50a2fe01bc96e5ab30e1b5.js?body=1" for ::1 at 2015-04-01 20:50:58 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 20:54:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (1.2ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.9ms)
+  Rendered bands/new.html.erb within layouts/application (35.6ms)
+  Rendered shared_partial/_navbar.html.erb (0.5ms)
+Completed 200 OK in 189ms (Views: 155.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-e8f68d35b60ec45ca86697b427408011.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/application-713aec4671b756d7a08d4a1f90ac66fa.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/band-c2a1af9ef3d4f3b1b8e2ed6ae9faf59b.js?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/application-024c9d4eb30259c2b0a517a1cda951d0.js?body=1" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/nomo-background.jpg" for ::1 at 2015-04-01 20:54:26 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:38 -0400
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 20:54:38 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:38 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:38 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:54:38 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 20:54:38 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 20:56:41 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (1.2ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.8ms)
+  Rendered bands/new.html.erb within layouts/application (6.5ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 101ms (Views: 98.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-1f52b37360ab0851526d8b1311f91997.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/application-3547b136f9435412725a6f16ed5f6d12.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/band-c2a1af9ef3d4f3b1b8e2ed6ae9faf59b.js?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/application-024c9d4eb30259c2b0a517a1cda951d0.js?body=1" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/assets/nomo-background.jpg" for ::1 at 2015-04-01 20:56:41 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 20:57:04 -0400
+Processing by BandsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBand Load (1.6ms)[0m  [1mSELECT "bands".* FROM "bands" INNER JOIN "user_bands" ON "bands"."id" = "user_bands"."band_id" WHERE "user_bands"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered bands/_band.html.erb (0.8ms)
+  Rendered bands/new.html.erb within layouts/application (7.9ms)
+  Rendered shared_partial/_navbar.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 109.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/bootstrap-952cefc53c405cc446f099230dd5c271.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/bands-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/bootstrap_and_customization-3da8c665a6c340540e26a5b7337da999.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/custom-89c2d6f3c423497b5c356ca3778e7923.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/user-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/application-b1ea0f76adf2cc052448f97ec97f3458.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/band-c2a1af9ef3d4f3b1b8e2ed6ae9faf59b.js?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/application-024c9d4eb30259c2b0a517a1cda951d0.js?body=1" for ::1 at 2015-04-01 20:57:04 -0400
+
+
+Started GET "/assets/nomo-background.jpg" for ::1 at 2015-04-01 20:57:05 -0400

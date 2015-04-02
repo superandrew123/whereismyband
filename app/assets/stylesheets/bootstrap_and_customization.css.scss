@@ -190,6 +190,7 @@ form.login a:hover
     left: 45%;
 }
 // end of signin page //
+
 .bandLi {
 	width: 100%;
 	font-size: 0.8em;
@@ -201,5 +202,10 @@ form.login a:hover
 }
 #bandsList, #showsList {
 	/*overflow: scroll;*/
+}
+
+.band-list {
+    height: 500px;
+    overflow: scroll;
 }
 
