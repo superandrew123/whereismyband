@@ -1,4 +1,5 @@
-class Searchify
+# require '.../app/model'
+class Searchify 
 
   def self.start
     Band.all.each do |band|
