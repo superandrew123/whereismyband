@@ -1,5 +1,4 @@
-<p class="hidden-alert" id="duplication-alert">This artist has already been added.</p>
-<p class="hidden-alert" id="unfound-artist-alert">This artist was not found.</p>
+
 <div class="row">
 	<div class="col-md-3">
 	</div>
@@ -10,7 +9,6 @@
 				<%= f.text_field :name, class: "band-name btn btn-lg btn-block", placeholder: "Enter an artist's name..."%>
 				<%= f.submit "add artist", :style => "display: none;" %>
 			<% end %><br><br>
-			<%= render current_user.bands %>
 		<% else %>
 			<%= form_for @band, method: "GET", url: { controller: "sessions", action: "new" },  :html => {:class => "fake_band"} do |f| %>
 				<%= f.label :name, :style => "display: none;"%>
@@ -18,18 +16,29 @@
 				<%= f.submit "add artist", :style => "display: none;" %>
 			<% end %><br><br>
 		<% end %>
+		<p class="hidden-alert" id="duplication-alert">This artist has already been added.</p>
+		<p class="hidden-alert" id="unfound-artist-alert">This artist was not found.</p>
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-3">
+	<div id="lists">
+		<div id="bandsList" class="col-md-6">
+			<section>
+				<ul class="band-list">
+				<!-- list out all the bands -->
+					<%= render current_user.bands if current_user %>
+				</ul>
+			</section>
+		</div>
+		<div id="showsList" class="col-md-6">
+			<section>
+				<ul class="event-list">
+				<!-- clicking on a band reveals it's events -->
+				</ul>
+			</section>
+		</div>
 	</div>
-	<div class="col-md-6">
-		<section>
-			<ul class="band-list">
-
-			</ul>
-		</section>
-</div>
+</div>	
 
 
 

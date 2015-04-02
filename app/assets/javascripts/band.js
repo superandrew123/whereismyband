@@ -1,6 +1,13 @@
 $(function(){
 	checkForDuplicate();
+	showEventsForBands();
 });
+// Can't get this to work. Butts
+function showEventsForBands(){
+// 	$("navbar").on("click",function() {    
+// 		console.log("testing");
+// 	});
+}
 
 function checkForDuplicate() {
 	$(".new_band").on("submit", function(e){

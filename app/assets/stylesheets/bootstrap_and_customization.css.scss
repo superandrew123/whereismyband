@@ -7,8 +7,7 @@ body {
 }
 
 .band-name {
-	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
-
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .band-name:focus {
@@ -190,3 +189,17 @@ form.login a:hover
     padding: 10px;
     left: 45%;
 }
+// end of signin page //
+.bandLi {
+	width: 100%;
+	font-size: 0.8em;
+  padding: 12px 20px;
+}
+
+#lists {
+
+}
+#bandsList, #showsList {
+	/*overflow: scroll;*/
+}
+
