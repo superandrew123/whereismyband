@@ -31,11 +31,7 @@
 		<div id="showsList" class="col-md-6">
 				<ul class="event-list">
 				<!-- clicking on a band reveals it's even -->
-				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 1" %></li>
-				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 2" %></li>
-				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 3" %></li>
-				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 4" %></li>
-				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 5" %></li>
+				  <%= render @events if current_user %>
 				</ul>
 		</div>
 	</div>

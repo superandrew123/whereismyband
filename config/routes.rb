@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
   post 'sessions' => 'sessions#create'
-
+  post 'bands/events' => 'bands#events'
   get "/auth/facebook/callback" => 'sessions#create'
 
 

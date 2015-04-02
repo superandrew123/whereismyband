@@ -193,8 +193,9 @@ form.login a:hover
 
 .bandLi {
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 1em;
   padding: 12px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 #lists {
@@ -204,8 +205,12 @@ form.login a:hover
 	/*overflow: scroll;*/
 }
 
-.band-list {
-    height: 500px;
+ul.band-list {
+    height: 400px;
     overflow: scroll;
 }
-
+ul.event-list {
+  font-size: 1em;    
+  height: 400px;
+  overflow: scroll;
+}

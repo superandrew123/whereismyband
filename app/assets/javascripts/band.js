@@ -1,13 +1,9 @@
 $(function(){
 	checkForDuplicate();
+	//in event.js
 	showEventsForBands();
 });
 // Can't get this to work. Butts
-function showEventsForBands(){
-	$("li.bandLi").click(function() {    
-		console.log("testing");
-	});
-}
 
 function checkForDuplicate() {
 	$(".new_band").on("submit", function(e){

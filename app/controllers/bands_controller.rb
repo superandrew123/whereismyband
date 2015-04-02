@@ -5,8 +5,17 @@ class BandsController < ApplicationController
   def new
     @band = Band.new
     @user = current_user
+    @events = current_user.events.order(start_time: :desc)
   end
 
+  def events
+    # take a band ID from the li on the page
+    # return that band's events
+    @band = Band.find(params[:band_id])
+    @events = @band.events
+    render :"events/events", :layout => false
+    binding.pry
+  end
 
   def create
     @band = Band.find_by(band_params)
@@ -25,10 +34,10 @@ class BandsController < ApplicationController
     end
   end
 
-    def destroy
-      @band = Band.find(params[:id])
-      @Band.destroy
-    end
+  def destroy
+    @band = Band.find(params[:id])
+    @Band.destroy
+  end
 
 
   private
