@@ -23,19 +23,20 @@
 <div class="row">
 	<div id="lists">
 		<div id="bandsList" class="col-md-6">
-			<section>
 				<ul class="band-list">
 				<!-- list out all the bands -->
 					<%= render current_user.bands if current_user %>
 				</ul>
-			</section>
 		</div>
 		<div id="showsList" class="col-md-6">
-			<section>
 				<ul class="event-list">
-				<!-- clicking on a band reveals it's events -->
+				<!-- clicking on a band reveals it's even -->
+				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 1" %></li>
+				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 2" %></li>
+				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 3" %></li>
+				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 4" %></li>
+				<li class="btn btn-default btn-lg disabled bandLi" data-id=""><%= "EVENT 5" %></li>
 				</ul>
-			</section>
 		</div>
 	</div>
 </div>	
