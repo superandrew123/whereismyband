@@ -11,7 +11,15 @@ task :console do
 end
 
 
-task :searchify do
+task :searchify => [:environment] do
 	Searchify.start
+end
+
+task :eliminate_past_events => [:environment] do
+  UpdateBandEvents.elminate_past_events
+end
+
+task :get_new_events => [:environment] do
+  UpdateBandEvents.get_new_fb_events
 end
 
