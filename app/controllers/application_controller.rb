@@ -9,9 +9,9 @@ class ApplicationController < ActionController::Base
   def log_in(user)
     # Creates a key on session called :user_id
     # and a value of the user account's id.
-    binding.pry
     session[:user_id] = user.id
   end
+  helper_method :log_in
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id].present?
