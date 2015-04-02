@@ -13,5 +13,14 @@ class User < ActiveRecord::Base
   has_secure_password
 
 
+  def self.from_omniauth(auth, user)
+      user.provider = auth.provider
+      user.uid = auth.uid
+      user.name = auth.info.name
+      user.email = auth.info.email
+      user.oauth_token = auth.credentials.token
+      user.password = "dummy_password"
+      user.save!
+  end
 
 end

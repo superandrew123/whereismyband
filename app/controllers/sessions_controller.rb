@@ -5,21 +5,39 @@ class SessionsController < ApplicationController
 
   end
 
+  # Creates the new log-in session
   def create
-
-    # Creates the new log-in session
-    @user = User.find_by(email: params[:user][:email]).try(:authenticate, params[:user][:password])
-    # binding.pry
-    if @user
-      # binding.pry
-      log_in(@user)
-      redirect_to root_path
+    #allow user to sign in w/ facebook or with a nomo account
+    if request.env['omniauth.auth']
+      #sign in or up with facebook
+      if User.find_by(email: request.env['omniauth.auth'].info.email)
+        @user = User.find_by(email: request.env['omniauth.auth'].info.email)
+        log_in(@user)
+        redirect_to root_path
+      else
+        @user = User.new
+        @user = User.from_omniauth(env["omniauth.auth"], @user)
+        binding.pry
+        log_in(@user)
+        redirect_to root_path
+      end
+  
     else
-      @user = User.new
-      # binding.pry
-      flash.now[:notice] = "Please use a valid email/password"
-      render :new
+    
+      @user = User.find_by(email: params[:user][:email]).try(:authenticate, params[:user][:password])
+      if @user
+        log_in(@user)
+        redirect_to root_path
+      else
+        @user = User.new
+        flash.now[:notice] = "Please use a valid email/password"
+        render :new
+      end
+
     end
+    
+
+
 
   end
 

@@ -22,7 +22,8 @@
                 <%= form_for @user, url: sessions_path, class: "login" do |f| %>
                 <%=f.text_field :email, placeholder: "email" %>
                 <%=f.password_field :password, placeholder: "password"%>
-                <%= f.submit "log in", class: "btn btn-success btn-sm" %>
+                <%= f.submit "log in", class: "btn btn-success btn-sm" %><br></br>
+                <%= link_to "Sign in with Facebook", "/auth/facebook"%>
                 <div class="remember-forgot">
                     <div class="row">
                         <div class="col-md-6">

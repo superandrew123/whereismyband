@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    
     # creating a new user account from
     # the "users#new" route
     @user = User.new(user_params)
