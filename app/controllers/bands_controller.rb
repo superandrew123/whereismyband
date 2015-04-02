@@ -1,6 +1,6 @@
 class BandsController < ApplicationController
-
   before_action :login_required, only: [:create]
+  autocomplete :band, :name
 
   def new
     @band = Band.new
@@ -31,6 +31,13 @@ class BandsController < ApplicationController
       @user.bands << @band
       @user.save
       render :layout => false
+    end
+  end
+
+  def autocomplete_name
+    @bands = Band.order(:name).where('name LIKE ?', "#{params[:term]}%").limit(10)
+    respond_to do |format|
+      format.json { render json: @bands.map(&:name) }
     end
   end
 
