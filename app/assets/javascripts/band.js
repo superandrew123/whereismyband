@@ -4,9 +4,9 @@ $(function(){
 });
 // Can't get this to work. Butts
 function showEventsForBands(){
-// 	$("navbar").on("click",function() {    
-// 		console.log("testing");
-// 	});
+	$("li.bandLi").click(function() {    
+		console.log("testing");
+	});
 }
 
 function checkForDuplicate() {
