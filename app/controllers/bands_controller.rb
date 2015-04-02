@@ -35,7 +35,7 @@ class BandsController < ApplicationController
   end
 
   def autocomplete_name
-    @bands = Band.order(:name).where('name LIKE ?', "#{params[:term]}%").limit(10)
+    @bands = Band.order(:name).where('name LIKE ?', "#{params[:term].titleize}%").limit(10)
     respond_to do |format|
       format.json { render json: @bands.map(&:name) }
     end
