@@ -5,7 +5,7 @@ class BandsController < ApplicationController
   def new
     @band = Band.new
     @user = current_user
-    @events = current_user.events.order(start_time: :desc)
+    @events = current_user.events.order(start_time: :asc) if current_user
   end
 
   def events
@@ -34,8 +34,10 @@ class BandsController < ApplicationController
   end
 
   def destroy
-    @band = Band.find(params[:id])
-    @Band.destroy
+    # Delete the association of the band and the user,
+    # not the user or the band
+    @band = UserBand.find_by(band_id: params[:id])
+    @band.destroy
   end
 
 

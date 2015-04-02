@@ -3,7 +3,7 @@ $(function(){
 	//in event.js
 	showEventsForBands();
 });
-// Can't get this to work. Butts
+
 
 function checkForDuplicate() {
 	$(".new_band").on("submit", function(e){

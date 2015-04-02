@@ -192,6 +192,7 @@ form.login a:hover
 // end of signin page //
 
 .bandLi {
+  overflow: scroll;
 	width: 100%;
 	font-size: 1em;
   padding: 12px 20px;
@@ -206,10 +207,12 @@ form.login a:hover
 }
 
 ul.band-list {
-    height: 400px;
-    overflow: scroll;
+
+  height: 400px;
+  overflow: scroll;
 }
 ul.event-list {
+  padding: 0;
   font-size: 1em;    
   height: 400px;
   overflow: scroll;

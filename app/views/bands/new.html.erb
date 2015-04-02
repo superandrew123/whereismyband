@@ -22,13 +22,13 @@
 </div>
 <div class="row">
 	<div id="lists">
-		<div id="bandsList" class="col-md-6">
+		<div id="bandsList" class="col-md-5">
 				<ul class="band-list">
 				<!-- list out all the bands -->
 					<%= render current_user.bands if current_user %>
 				</ul>
 		</div>
-		<div id="showsList" class="col-md-6">
+		<div id="showsList" class="col-md-7">
 				<ul class="event-list">
 				<!-- clicking on a band reveals it's even -->
 				  <%= render @events if current_user %>
