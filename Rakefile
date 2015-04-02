@@ -19,7 +19,23 @@ task :eliminate_past_events => [:environment] do
   UpdateBandEvents.elminate_past_events
 end
 
-task :get_new_events => [:environment] do
-  UpdateBandEvents.get_new_fb_events
+task :get_new_events_first => [:environment] do
+  UpdateBandEvents.get_new_fb_events_first
+end
+
+task :get_new_events_second => [:environment] do
+  UpdateBandEvents.get_new_fb_events_second
+end
+
+task :get_new_events_third => [:environment] do
+  UpdateBandEvents.get_new_fb_events_third
+end
+
+task :get_new_events_fourth => [:environment] do
+  UpdateBandEvents.get_new_fb_events_fourth
+end
+
+task :get_new_events_fifth => [:environment] do
+  UpdateBandEvents.get_new_fb_events_fifth
 end
 
