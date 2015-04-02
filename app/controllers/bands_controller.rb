@@ -14,7 +14,6 @@ class BandsController < ApplicationController
     @band = Band.find(params[:band_id])
     @events = @band.events
     render :"events/events", :layout => false
-    binding.pry
   end
 
   def create
