@@ -1,7 +1,10 @@
+<!-- MAIN PAGE -->
+
 <div class="row">
 	<div class="col-md-3">
 	</div>
 	<div class="col-md-6">
+	<!-- Search bar searches for bands or redirects to login page if not logged in -->
 		<% if current_user %>
 			<%= form_for @band, class: "new-band" do |f| %>
 				<%= f.label :name, :style => "display: none;"%>

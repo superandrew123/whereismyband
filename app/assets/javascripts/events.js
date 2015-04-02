@@ -1,3 +1,5 @@
+
+// Display the selected band to the right of the bands list.
 function showEventsForBands(){
 	$("li.bandLi").click(function(e) {
 		e.preventDefault();
@@ -14,6 +16,7 @@ function showEventsForBands(){
 		});
 	});
 }
+// Display the events or show a no upcoming shows notice
 function replaceEvents(htmlResponse){
 	if (htmlResponse.length > 0) {
 		$(".event-list").html(htmlResponse);
