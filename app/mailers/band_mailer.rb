@@ -7,7 +7,8 @@ class BandMailer < ApplicationMailer
   def email_update(user, *event_array)
     @user = user
     # binding.pry
-    @events = event_array
+    @events = event_array.flatten.uniq
+    # binding.pry
     mail(to: @user.email, subject: "Don't miss out on these shows!")
     if LOG.last != Date.today
       LOG << Date.today
