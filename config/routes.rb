@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   resources :users, :except => ["new"]
   get '/signup'=> 'users#new', :as => 'signup'
 
-  resources :bands
+  resources :bands do
+    get :autocomplete_name, on: :collection
+  end
   # Landing page allow users to add bands to their
   # tracked bands
   root 'bands#new'

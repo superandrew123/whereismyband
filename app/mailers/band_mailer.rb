@@ -1,17 +1,24 @@
-class UserMailer < ApplicationMailer
+class BandMailer < ApplicationMailer
+  # attr_accessor :log
 
-  def update_email(user, *event_array)
+
+  LOG = ["Wed, 01 Apr 2015".to_date]
+  
+  def email_update(user, *event_array)
     @user = user
-    @events = event_array
+    # binding.pry
+    @events = event_array.flatten.uniq
+    # binding.pry
     mail(to: @user.email, subject: "Don't miss out on these shows!")
+    if LOG.last != Date.today
+      LOG << Date.today
+    end
+  end
 
-   
+ 
 
+  def self.log
+    LOG 
   end
 end
 
-# def welcome_email(user)
-#     @user = user
-#     mail(to: @user.email, subject: "Welcome to our site!")
-
-#   end

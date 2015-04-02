@@ -6,13 +6,13 @@
 		<% if current_user %>
 			<%= form_for @band, class: "new-band" do |f| %>
 				<%= f.label :name, :style => "display: none;"%>
-				<%= f.text_field :name, class: "band-name btn btn-lg btn-block", placeholder: "Enter an artist's name..."%>
+				<%= f.autocomplete_field :name, autocomplete_name_bands_path, class: "band-name btn btn-lg btn-block", placeholder: "Enter an artist's name..." %>
 				<%= f.submit "add artist", :style => "display: none;" %>
 			<% end %><br><br>
 		<% else %>
 			<%= form_for @band, method: "GET", url: { controller: "sessions", action: "new" },  :html => {:class => "fake_band"} do |f| %>
 				<%= f.label :name, :style => "display: none;"%>
-				<%= f.text_field :name, class: "band-name btn btn-lg btn-block", placeholder: "Enter an artist's name..."%>
+				<%= f.autocomplete_field :name, autocomplete_name_bands_path, class: "band-name btn btn-lg btn-block", placeholder: "Enter an artist's name..." %>
 				<%= f.submit "add artist", :style => "display: none;" %>
 			<% end %><br><br>
 		<% end %>
@@ -35,7 +35,7 @@
 				</ul>
 		</div>
 	</div>
-</div>	
+</div>
 
 
 
