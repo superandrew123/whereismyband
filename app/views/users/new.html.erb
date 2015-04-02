@@ -12,19 +12,20 @@
 		</div>
 	<% end %>
 	<div id="user_form">
-   <%= f.label :name %><br>
-   <%= f.text_field :name %><br>
-   <%= f.label :email %><br>
-   <%= f.text_field :email %><br>
-   <%= f.label :password %><br>
-   <%= f.password_field :password %><br>
-   <%= f.label :password_confirmation %><br>
-   <%= f.password_field :password_confirmation %><br>
+		<div id="fbSignup"><%= link_to "Sign up with Facebook", "/auth/facebook", {class: "fbSignup"}%></div><br>
+		<p class="or">OR Create an account:</p>
+    <%= f.label :name%>:<br>
+    <%= f.text_field :name,class: "signInput" %><br>
+    <%= f.label :email %>:<br>
+    <%= f.text_field :email,class: "signInput" %><br>
+    <%= f.label :password %>:<br>
+    <%= f.password_field :password,class: "signInput" %><br>
+    <%= f.label :password_confirmation %>:<br>
+    <%= f.password_field :password_confirmation,class: "signInput" %><br><br>
 	 <div class="actions">
-	   <%= f.submit "Sign Up" %>
+	  <%= f.submit "Sign Up", class: "signUpSubmit" %>
 	 </div>
 	</div>
 <% end %><br><br>
- <%= link_to "Sign up with Facebook", "/auth/facebook"%>
 
 

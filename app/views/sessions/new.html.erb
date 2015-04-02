@@ -1,45 +1,28 @@
-<!--
-  <div class="row">
-        <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Sign in </h1>
-            <div class="account-wall">
-                <#%= form_for @user, url: sessions_path, class: "form-signin" do |f| #%>
-                <#%=f.text_field :email, class: 'form-control', placeholder: "email" #%>
-                <#%=f.password_field :password, class: 'form-control', placeholder: "password"#%>
-                <#%= f.submit "log in", class: "btn btn-lg btn-default btn-block" #%>
-                <#%end#%>
-
-            </div>
-            <a href="<#%= signup_path #%>" class="text-center new-account">Create an account </a>
-        </div>
-    </div> -->
-
 <div class="row">
-        <div class="col-md-12">
-            <div class="wrap">
-                <p class="form-title">
-                    Sign In</p>
-                <%= form_for @user, url: sessions_path, class: "login" do |f| %>
-                <%=f.text_field :email, placeholder: "email" %>
-                <%=f.password_field :password, placeholder: "password"%>
-                <%= f.submit "log in", class: "btn btn-success btn-sm" %><br></br>
-                <%= link_to "Sign in with Facebook", "/auth/facebook"%>
-                <div class="remember-forgot">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" />
-                                    Remember Me
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-6 forgot-pass-content">
-                            <a href="javascription:void(0)" class="forgot-pass">Forgot Password</a>
-                        </div>
-                    </div>
-                </div>
-             <%end%>
+  <div class="col-md-12">
+    <div class="wrap">
+      <p class="form-title">Sign In</p>
+      <%= form_for @user, url: sessions_path, class: "login" do |f| %>
+      <div id="user_form">
+        <div id="fbSignup"><%= link_to "Sign in with Facebook", "/auth/facebook", class: "fbLogin"%></div><br>
+        <p class="or">OR Log in with Nomo:</p>
+        <%= f.label :email %>:<br>
+        <%=f.text_field :email, placeholder: "email", class: "signInput" %><br>
+        <%= f.label :password %>:<br>
+        <%=f.password_field :password, placeholder: "password", class: "signInput"%><br><br>
+        <%= f.submit "log in", class: "btn btn-success btn-sm"%><br>
+        <div class="remember-forgot">
+          <div class="row">
+            <div class="checkbox">
+              <label class="rememberMe"><input type="checkbox">Remember Me</input></label>
             </div>
+          </div>
+          <div class="forgot-pass-content">
+            <a href="javascription:void(0)" class="forgot-pass">Forgot Password</a>
+          </div>
         </div>
+        </div>
+      <%end%>
     </div>
+  </div>
+</div>  
