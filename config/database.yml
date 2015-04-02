@@ -8,7 +8,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
- 
+
 
 development:
   <<: *default
@@ -22,5 +22,4 @@ test:
   database: whereismyband_test
 
 production:
-  <<: *default
-  database: whereismyband_production
+  url: <%= ENV['DATABASE_URL'] %>
