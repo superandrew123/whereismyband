@@ -60,7 +60,6 @@ function submitBand(form) {
 	var data = form.serialize();
 	var url = form.attr("action");
 	var method = form.attr("method");
-	debugger;
 	$.ajax(url, {
 		method: method,
 		data: data,
