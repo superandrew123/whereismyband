@@ -1,1 +1,1 @@
-<li class="btn btn-default btn-lg bandLi" data-id="<%= band.id %>"><%= "#{band.name} - #{band.events.count} upcoming #{pluralize(band.events.count, "show")}" %> <a class="destroy">X</a></li>
+<li class="btn btn-default btn-lg bandLi" data-id="<%= band.id %>"><%= "#{band.name} - #{pluralize(band.events.count, "upcoming show")}" %> <a class="destroy">X</a></li>

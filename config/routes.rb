@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
   # Landing page allow users to add bands to their
   # tracked bands
-  root 'bands#new'
+  root 'user_bands#new'
   resources :events
 
   get 'login' => 'sessions#new'

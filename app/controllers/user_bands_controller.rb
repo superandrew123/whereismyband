@@ -1,4 +1,11 @@
 class UserBandsController < ApplicationController
+
+  def new
+    @band = Band.new
+    @user = current_user
+    @events = current_user.events.order(start_time: :asc) if current_user
+  end
+
   def create
     # search for a band and add it to a user
     # binding.pry

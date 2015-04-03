@@ -4,9 +4,8 @@ class BandsController < ApplicationController
 
   def new
     # root page
-    @band = Band.new
-    @user = current_user
-    @events = current_user.events.order(start_time: :asc) if current_user
+   @band = Band.new
+
   end
 
   def events
@@ -18,8 +17,10 @@ class BandsController < ApplicationController
   end
 
   def create
+    binding.pry
     # Make a new band
-    @band = Band.new
+    # @band = Band.new
+
   end
 
   # Redacted and moved to user_bands_controller
