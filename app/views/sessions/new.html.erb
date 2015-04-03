@@ -6,6 +6,9 @@
       <p class="form-title">Sign In</p>
       <%= form_for @user, url: sessions_path, class: "login" do |f| %>
       <div id="user_form">
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
         <div id="fbSignup"><%= link_to "Sign in with Facebook", "/auth/facebook", class: "fbLogin"%></div><br>
         <p class="or">OR Log in with Nomo:</p>
         <%= f.label :email %>:<br>

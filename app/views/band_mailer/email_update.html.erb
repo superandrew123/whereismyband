@@ -2,7 +2,7 @@
 <%@events.each do |event|%>
   Don't miss out on <%=event.band.name%>'s upcoming shows:
   <ul>
-    <li><%= event.start_time.to_s.to_date%>, <%= event.location%></li>
+    <li><a href="<%=event.link%>"><%= event.start_time.to_s.to_date%>, <%= event.location%></a></li>
   </ul>
 </p>
 <%end%>

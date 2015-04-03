@@ -20,24 +20,17 @@ class SessionsController < ApplicationController
         log_in(@user)
         redirect_to root_path
       end
-  
     else
-    
       @user = User.find_by(email: params[:user][:email]).try(:authenticate, params[:user][:password])
       if @user
         log_in(@user)
         redirect_to root_path
       else
         @user = User.new
-        flash.now[:notice] = "Please use a valid email/password"
+        flash[:notice] = "Please use a valid email/password"
         render :new
       end
-
     end
-    
-
-
-
   end
 
   def destroy
