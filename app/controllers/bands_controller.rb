@@ -21,7 +21,7 @@ class BandsController < ApplicationController
     @band = Band.find_by(band_params)
     @user = current_user
     if !@band
-      # if band cannot be found, do not add to a user account 
+      # if band cannot be found, do not add to a user account
       render :layout => false
     elsif @user.bands.include?(@band)
       # if band can be found but already belongs to a user, do not add to user account
@@ -47,6 +47,9 @@ class BandsController < ApplicationController
     # not the user or the band
     @band = UserBand.find_by(band_id: params[:id])
     @band.destroy
+    # binding.pry
+
+    render nothing: :true, status: :ok
   end
 
 

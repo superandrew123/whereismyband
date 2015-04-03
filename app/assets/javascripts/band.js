@@ -3,6 +3,8 @@ $(function(){
 	checkForDuplicate();
 	//in event.js
 	showEventsForBands();
+
+	$("button.destroy").on("click", deleteBand);
 });
 
 // Check if a band has already been added to a user account
@@ -16,7 +18,6 @@ function checkForDuplicate() {
 		if ($ulVal != undefined){
 			$ulVal = $(".band-list").html().toLowerCase();
 			if (($ulVal.indexOf($formVal)) >= 0) {
-       // // debugger;
 				$("#duplication-alert").removeClass("hidden-alert");
 				artistFound();
 			} else {
@@ -28,6 +29,28 @@ function checkForDuplicate() {
 			submitBand($form);
 		}
 	});
+}
+
+
+
+// delete user band
+
+function deleteBand(e) {
+	e.preventDefault;
+
+	var $li = $(this).parents("li");
+
+	var id = $li.data("id")
+// delete request to bands controller destroy method
+	$.ajax("/bands/" + id, {
+		"method": "DELETE",
+		"complete": function() {
+			$li.slideUp(function(){
+				$(this).remove();
+			});
+		}
+	});
+
 }
 
 // If no band conflicts, submit form
