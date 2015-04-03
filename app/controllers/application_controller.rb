@@ -9,7 +9,6 @@ class ApplicationController < ActionController::Base
   def log_in(user)
     # Creates a key on session called :user_id
     # and a value of the user account's id.
-    binding.pry
     session[:user_id] = user.id
   end
   helper_method :log_in

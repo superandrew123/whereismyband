@@ -24,4 +24,8 @@ class User < ActiveRecord::Base
       user
   end
 
+  def greeting
+    greetings = ["Keep rockin, ", "sup, ", "yo, ", "Lookin good, ", "Greetings, ", "What's up, ", "Today is a good day to die, "]
+    "#{greetings.sample}#{self.name}"
+  end
 end

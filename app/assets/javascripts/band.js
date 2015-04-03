@@ -4,7 +4,7 @@ $(function(){
 	//in event.js
 	showEventsForBands();
 
-	$("button.destroy").on("click", deleteBand);
+	$("a.destroy").on("click", deleteBand);
 });
 
 // Check if a band has already been added to a user account
