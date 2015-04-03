@@ -1,13 +1,3 @@
-$(function(){
-	showEventsForBands();
-	//in event.js
-	replaceEvents();
-});
-
-
-
-
-
 // Display the selected band to the right of the bands list.
 
 
