@@ -4,7 +4,7 @@ $(function(){
 	//in event.js
 	showEventsForBands();
 
-	$("a.destroy").on("click", deleteBand);
+	$("li.bandLi").on("click", "a", deleteBand);
 });
 
 // Check if a band has already been added to a user account
@@ -36,21 +36,21 @@ function checkForDuplicate() {
 // delete user band
 
 function deleteBand(e) {
-	e.preventDefault;
+	if(e){
+		e.preventDefault;
+		var $li = $(this).parents("li");
 
-	var $li = $(this).parents("li");
-
-	var id = $li.data("id")
-// delete request to bands controller destroy method
-	$.ajax("/bands/" + id, {
-		"method": "DELETE",
-		"complete": function() {
-			$li.slideUp(function(){
-				$(this).remove();
-			});
-		}
-	});
-
+		var id = $li.data("id")
+	// delete request to bands controller destroy method
+		$.ajax("/bands/" + id, {
+			"method": "DELETE",
+			"complete": function() {
+				$li.slideUp(function(r){
+					$(this).remove();
+				});
+			}
+		});
+	}
 }
 
 // If no band conflicts, submit form
@@ -58,13 +58,15 @@ function submitBand(form) {
 	var data = form.serialize();
 	var url = form.attr("action");
 	var method = form.attr("method");
-	console.log("hi from submitBand");
 	$.ajax(url, {
 		method: method,
 		data: data,
 		success: function(response) {
 			$('ul.band-list').prepend(response);
 			$('.band-name').val("");
+			$("li.bandLi").click(showEventsForBands);
+			$("a.destroy").on("click", deleteBand);
+			// showEventsForBands();
 		}
 	});
 }
