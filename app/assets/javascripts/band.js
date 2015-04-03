@@ -2,8 +2,7 @@
 $(function(){
 	checkForDuplicate();
 	//in event.js
-	showEventsForBands();
-
+	$("li.bandLi").on("click", showEventsForBands);
 	$("li.bandLi").on("click", "a", deleteBand);
 });
 
@@ -47,6 +46,7 @@ function deleteBand(e) {
 			"complete": function() {
 				$li.slideUp(function(r){
 					$(this).remove();
+					$(".event-list").html("");
 				});
 			}
 		});

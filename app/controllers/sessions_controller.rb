@@ -27,7 +27,7 @@ class SessionsController < ApplicationController
         redirect_to root_path
       else
         @user = User.new
-        flash[:notice] = "Please use a valid email/password"
+        # flash[:notice] = "Please use a valid email/password"
         render :new
       end
     end

@@ -16,7 +16,7 @@ ARRAY.each do |letter|
     artist_slug = artist.text.gsub(" ","")
     artist_name = artist.text
     puts artist_name
-  # catchin error if facebook page exists
+  # catchin error if facebook page doesn't exists
     begin
       artist_fb = FbGraph::Page.fetch(artist_slug, :access_token => ENV["fb_access_token"])
   # if the musician/band page exists persist that to the bands table
