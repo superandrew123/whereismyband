@@ -1,7 +1,9 @@
-
 // Display the selected band to the right of the bands list.
+
+
 function showEventsForBands(){
 	$("li.bandLi").click(function(e) {
+		debugger;
 		e.preventDefault();
 		e.stopPropagation();    
 		var bandId = $(this).attr("data-id");

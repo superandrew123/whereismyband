@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
       user.oauth_token = auth.credentials.token
       user.password = "dummy_password"
       user.save!
+      user
   end
 
 end
