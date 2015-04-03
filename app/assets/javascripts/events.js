@@ -4,7 +4,6 @@
 
 function showEventsForBands(){
 	$("li.bandLi").click(function(e) {
-		debugger;
 		e.preventDefault();
 		e.stopPropagation();    
 		var bandId = $(this).attr("data-id");

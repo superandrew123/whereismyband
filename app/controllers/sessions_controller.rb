@@ -11,12 +11,10 @@ class SessionsController < ApplicationController
     if request.env['omniauth.auth']
       #sign in or up with facebook
       if User.find_by(email: request.env['omniauth.auth'].info.email)
-        binding.pry
         @user = User.find_by(email: request.env['omniauth.auth'].info.email)
         log_in(@user)
         redirect_to root_path
       else
-        binding.pry
         @user = User.new
         @user = User.from_omniauth(env["omniauth.auth"], @user)
         log_in(@user)
