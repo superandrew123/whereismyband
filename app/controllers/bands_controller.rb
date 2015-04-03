@@ -13,7 +13,7 @@ class BandsController < ApplicationController
     # take a band ID from the li on the page
     # return that band's events
     @band = Band.find(params[:band_id])
-    @events = @band.events
+    @events = @band.events.order(start_time: :asc)
     render :"events/events", :layout => false
   end
 
@@ -46,7 +46,7 @@ class BandsController < ApplicationController
     # Delete the association of the band and the user,
     # not the user or the band
     @band = UserBand.find_by(band_id: params[:id])
-    @band.destroy
+    @band.destroy if @band
     # binding.pry
 
     render nothing: :true, status: :ok
