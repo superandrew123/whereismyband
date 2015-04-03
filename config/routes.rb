@@ -14,10 +14,9 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
   post 'sessions' => 'sessions#create'
-
+  post 'user_bands' => 'user_bands#create'
+  delete 'user_bands' => 'user_bands#destroy'
   # sends the id of the band the user clicked on to the bands#event controller
   post 'bands/events' => 'bands#events'
   get "/auth/facebook/callback" => 'sessions#create'
-
-
 end

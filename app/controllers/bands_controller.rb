@@ -18,22 +18,29 @@ class BandsController < ApplicationController
   end
 
   def create
-    @band = Band.find_by(band_params)
-    @user = current_user
-    if !@band
-      # if band cannot be found, do not add to a user account
-      render :layout => false
-    elsif @user.bands.include?(@band)
-      # if band can be found but already belongs to a user, do not add to user account
-      flash.now[:notice] = "Artist already added"
-      render :layout => false
-    else
-      # add band to user account
-      @user.bands << @band
-      @user.save
-      render :layout => false
-    end
+    # Make a new band
+    @band = Band.new
   end
+
+  # Redacted and moved to user_bands_controller
+  # def show
+  #   # search for a band and add it to a user
+  #   @band = Band.find_by(band_params)
+  #   @user = current_user
+  #   if !@band
+  #     # if band cannot be found, do not add to a user account
+  #     render :layout => false
+  #   elsif @user.bands.include?(@band)
+  #     # if band can be found but already belongs to a user, do not add to user account
+  #     flash.now[:notice] = "Artist already added"
+  #     render :layout => false
+  #   else
+  #     # add band to user account
+  #     @user.bands << @band
+  #     @user.save
+  #     render :layout => false
+  #   end
+  # end
 
   def autocomplete_name
     @bands = Band.order(:name).where('name LIKE ?', "#{params[:term].titleize}%").limit(10)
@@ -41,17 +48,6 @@ class BandsController < ApplicationController
       format.json { render json: @bands.map(&:name) }
     end
   end
-
-  def destroy
-    # Delete the association of the band and the user,
-    # not the user or the band
-    @band = UserBand.find_by(band_id: params[:id])
-    @band.destroy if @band
-    # binding.pry
-
-    render nothing: :true, status: :ok
-  end
-
 
   private
     def sanitize_params

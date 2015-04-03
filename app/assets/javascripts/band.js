@@ -40,13 +40,15 @@ function deleteBand(e) {
 		var $li = $(this).parents("li");
 
 		var id = $li.data("id")
+		var data = {band_id: id}
 	// delete request to bands controller destroy method
-		$.ajax("/bands/" + id, {
+		$.ajax("/user_bands/", {
 			"method": "DELETE",
+			data: data,
 			"complete": function() {
 				$li.slideUp(function(r){
-					$(this).remove();
 					$(".event-list").html("");
+					$(this).remove();
 				});
 			}
 		});
@@ -58,6 +60,7 @@ function submitBand(form) {
 	var data = form.serialize();
 	var url = form.attr("action");
 	var method = form.attr("method");
+	debugger;
 	$.ajax(url, {
 		method: method,
 		data: data,
