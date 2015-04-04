@@ -38,7 +38,7 @@ p.form-title {
 }
 
 form {
-  width: 250px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -232,10 +232,27 @@ form#new_user {
   color: white;
   font-size: 1.2em;
 }
-
 .fb-img {
   border-radius: 50px;
   border: solid white 3px;
+}
+form#createBand {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  padding: 2em;
+  color: white;
+  font-size: 1.2em; 
+}
+#unfound-artist-alert {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  padding: 0.5em;
+  color: blue;
+  margin-left: 25.5%;
+}
+#band_fb_slug {
+  width: 100%;
+}
+form#createBand input {
+  color: black;
 }
 
 

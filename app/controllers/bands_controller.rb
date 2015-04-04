@@ -3,9 +3,7 @@ class BandsController < ApplicationController
   autocomplete :band, :name
 
   def new
-    # root page
    @band = Band.new
-
   end
 
   def events
@@ -16,32 +14,24 @@ class BandsController < ApplicationController
     render :"events/events", :layout => false
   end
 
+  # ENV["fb_access_token"]
   def create
-    binding.pry
-    # Make a new band
-    # @band = Band.new
-
+    @user = current_user if current_user
+    fb_slug = params[:band][:fb_slug].split("com/")[1].split(/[?\/]/)[0]
+    begin
+      fb_band = FbGraph::Page.fetch(fb_slug, :access_token => "800988173324571|a6c34c85f3718314fcafb4c12b2df52c")
+      @band = Band.new(name: fb_band.name, fb_slug: fb_slug, search_name: fb_band.name)
+      fb_band.events.each do |event|
+        @band.events << Event.find_or_create_by(location: event.name, start_time: event.start_time)
+      end
+      @band.save
+      @user.bands << @band
+      @user.save
+    rescue
+      # Band not found
+    end
+    redirect_to root_path
   end
-
-  # Redacted and moved to user_bands_controller
-  # def show
-  #   # search for a band and add it to a user
-  #   @band = Band.find_by(band_params)
-  #   @user = current_user
-  #   if !@band
-  #     # if band cannot be found, do not add to a user account
-  #     render :layout => false
-  #   elsif @user.bands.include?(@band)
-  #     # if band can be found but already belongs to a user, do not add to user account
-  #     flash.now[:notice] = "Artist already added"
-  #     render :layout => false
-  #   else
-  #     # add band to user account
-  #     @user.bands << @band
-  #     @user.save
-  #     render :layout => false
-  #   end
-  # end
 
   def autocomplete_name
     @bands = Band.order(:name).where('name LIKE ?', "#{params[:term].titleize}%").limit(10)

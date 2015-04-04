@@ -1,5 +1,11 @@
-<%= form_for @band, :html =>{class: "test"} do |f|%>
-<%= f.label :fb_slug%>
-<%= f.text_field :fb_slug%>
-<%=f.submit%>
-<%end%>
+
+<br>
+<br>
+<div class="col-md-4"></div>	
+	<%= form_for @band, :html => {id: "createBand", class: "col-md-4"} do |f|%>
+		<br>
+		<p>Copy the address bar or URL for the band's facebook page and paste it into the field below. If the address is valid, the band will be added to our list of available bands and automatically added to your account! Thank you!</p><br><br>
+		<%= f.label :fb_slug, "facebook adress:"%><br>
+		<%= f.text_field :fb_slug, placeholder: "facebook url/address", class: "createBandField" %><br><br>
+		<%= f.submit %>
+	<%end%>
