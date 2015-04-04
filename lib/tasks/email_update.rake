@@ -18,7 +18,6 @@ class EmailUpdate
             end 
           end     
         end
-        binding.pry
         BandMailer.email_update(user, new_events).deliver
         # puts "email sent!"
       end
