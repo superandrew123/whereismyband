@@ -39,6 +39,10 @@ task :get_new_events_fifth => [:environment] do
   UpdateBandEvents.get_new_fb_events_fifth
 end
 
+task :get_new_events_sixth => [:environment] do
+  UpdateBandEvents.get_new_fb_events_fifth
+end
+
 task :update_user_with_new_events => [:environment] do
   EmailUpdate.alert_users_to_new_events
 end
