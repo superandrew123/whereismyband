@@ -26,7 +26,6 @@ class UpdateBandEvents
         puts "#{band.name}"
         end
     end
-    puts "success"
   end
 
   def self.get_new_fb_events_second

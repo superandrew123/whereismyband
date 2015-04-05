@@ -2,7 +2,7 @@ class BandMailer < ApplicationMailer
   # attr_accessor :log
 
 
-  LOG = ["Wed, 01 Apr 2015".to_date]
+  # LOG = ["Wed, 01 Apr 2015".to_date]
   
   def email_update(user, *event_array)
     @user = user
@@ -10,15 +10,13 @@ class BandMailer < ApplicationMailer
     @events = event_array.flatten.uniq
     # binding.pry
     mail(to: @user.email, subject: "Don't miss out on these shows!")
-    if LOG.last != Date.today
-      LOG << Date.today
-    end
+    user.last_email_date = Date.today
   end
 
  
 
-  def self.log
-    LOG 
-  end
+  # def self.log
+  #   LOG 
+  # end
 end
 

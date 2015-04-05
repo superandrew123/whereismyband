@@ -12,6 +12,13 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
+  after_create :set_last_email_date
+
+  def set_last_email_date
+    self.last_email_date = Date.today
+    self.save
+  end
+
 
   def self.from_omniauth(auth, user)
       user.provider = auth.provider
