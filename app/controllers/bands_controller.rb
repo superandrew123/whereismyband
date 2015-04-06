@@ -19,8 +19,8 @@ class BandsController < ApplicationController
     @user = current_user if current_user
     fb_slug = params[:band][:fb_slug].split("com/")[1].split(/[?\/]/)[0]
     begin
-      fb_band = FbGraph::Page.fetch(fb_slug, :access_token => "800988173324571|a6c34c85f3718314fcafb4c12b2df52c")
-      @band = Band.new(name: fb_band.name, fb_slug: fb_slug, search_name: fb_band.name)
+      fb_band = FbGraph::Page.fetch(fb_slug, :access_token => ENV["fb_access_token"])
+      @band = Band.new(name: fb_band.name, fb_slug: fb_slug, search_name: fb_band.name.downcase)
       fb_band.events.each do |event|
         @band.events << Event.find_or_create_by(location: event.name, start_time: event.start_time)
       end

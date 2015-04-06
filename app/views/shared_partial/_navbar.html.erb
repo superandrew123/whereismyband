@@ -9,7 +9,7 @@
         <!-- Display the user name if logged in -->
         <li id="displayName" class="btn disabled dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.greeting %>  <img src="<%= current_user.photo%>" class="fb-img dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"/></li>
          
-        <li><%= link_to "Log Out", logout_path %></li>
+        <li class="logOutButton"><%= link_to "Log Out", logout_path %></li>
          
        
       <%else%>

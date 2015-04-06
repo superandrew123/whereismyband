@@ -3,7 +3,7 @@ $(function(){
 	checkForDuplicate();
 	//in event.js
 	$("li.bandLi").on("click", showEventsForBands);
-	$("li.bandLi").on("click", "a", deleteBand);
+	$("li.bandLi").on("click", "a.bandDestroy", deleteBand);
 });
 
 // Check if a band has already been added to a user account
