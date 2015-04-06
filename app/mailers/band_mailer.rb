@@ -10,7 +10,10 @@ class BandMailer < ApplicationMailer
     @events = event_array.flatten.uniq
     # binding.pry
     mail(to: @user.email, subject: "Don't miss out on these shows!")
-    user.last_email_date = Date.today
+    binding.pry
+    user.last_email_date = Time.now
+    user.save
+    binding.pry
   end
 
  
