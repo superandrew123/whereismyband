@@ -8,6 +8,7 @@ class UserBandsController < ApplicationController
   end
 
   def create
+    binding.pry
     # search for a band and add it to a user
     @band = Band.find_by(band_params)
     @user = current_user
