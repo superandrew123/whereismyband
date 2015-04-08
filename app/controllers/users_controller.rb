@@ -10,7 +10,6 @@ class UsersController < ApplicationController
     # binding.pry
     if @user.save
       # Create a new session when a new user account is created
-      binding.pry
       log_in(@user)
       UserMailer.welcome_email(@user).deliver
       redirect_to root_path #:notice => "Account created!"

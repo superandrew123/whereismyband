@@ -17,13 +17,19 @@ class BandsController < ApplicationController
   # ENV["fb_access_token"]
   def create
     @user = current_user if current_user
-    fb_slug = params[:band][:fb_slug].split("com/")[1].split(/[?\/]/)[0]
+    fb_slug = params[:band][:fb_slug].split("com/")[1]
+    if fb_slug[0..5] == "pages/"
+      fb_slug = fb_slug[6..-1]
+    end
+    fb_slug = fb_slug.split(/[?\/]/)[0]
     begin
       fb_band = FbGraph::Page.fetch(fb_slug, :access_token => ENV["fb_access_token"])
-      @band = Band.new(name: fb_band.name, fb_slug: fb_slug, search_name: fb_band.name.downcase)
+      band_name = fb_slug.gsub("_"," ").gsub("-"," ")
+      @band = Band.new(name: band_name, fb_slug: fb_slug, search_name: band_name.downcase)
       fb_band.events.each do |event|
         @band.events << Event.find_or_create_by(location: event.name, start_time: event.start_time)
       end
+      binding.pry
       @band.save
       @user.bands << @band
       @user.save
