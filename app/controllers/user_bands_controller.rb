@@ -9,7 +9,7 @@ class UserBandsController < ApplicationController
 
   def create
     # search for a band using the search service object and add it to a user
-    @band = Search.new(band_params).search
+    @band = SearchBands.new(band_params).search
     @user = current_user
     if !@band
       # if band cannot be found, do not add to a user account

@@ -1,4 +1,4 @@
-class Search
+class SearchBands
 
 
   attr_accessor :band_params
@@ -8,7 +8,6 @@ class Search
   end
 
   def search
-    binding.pry
     Band.find_by(self.band_params)
   end
 
