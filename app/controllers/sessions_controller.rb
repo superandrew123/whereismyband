@@ -15,7 +15,6 @@ class SessionsController < ApplicationController
         log_in(@user)
         redirect_to root_path
       else
-        # binding.pry
         @user = User.new
         @user = User.from_omniauth(env["omniauth.auth"], @user)
         log_in(@user)
