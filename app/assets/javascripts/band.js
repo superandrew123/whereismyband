@@ -45,8 +45,8 @@ function deleteBand(e) {
 		$.ajax("/user_bands/", {
 			"method": "DELETE",
 			data: data,
-			"complete": function() {
-				$li.slideUp(function(r){
+			complete: function() {
+				$li.slideUp(function(){
 					$(".event-list").html("");
 					$(this).remove();
 				});
