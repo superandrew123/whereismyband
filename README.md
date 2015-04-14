@@ -1,22 +1,10 @@
+A rails app that uses the Facebook Graph API and a custom-built scrape of the billboard artist pages to connect users to artists and upcoming events. 
 
-What is our question?
+Action Mailer updates a user as soon as a new event is added to an artist they subscribe to via our service. 
 
-HOw do I avoid missing my band's shows? -A
-Where is my band? -S, Never miss a show again.
-What's happening with my bands?
-Is my band playing this week?
+Log in via Facebook or sign up and log in with an account on our site. 
 
+Collaborators: 
 
-
-TODO for 3/30/2015 Monday:
-Get something live:
-	working 
-
-TODO future:
-	OAth
-
-
-Generate:
-user
-band
-event
+[Sophie DeBenedetto](https://github.com/SophieDeBenedetto)
+[Cyrus Ghazanfar](https://github.com/cyzanfar)
