@@ -10,8 +10,8 @@ class SessionsController < ApplicationController
     #allow user to sign in w/ facebook or with a nomo account
     if request.env['omniauth.auth']
       #sign in or up with facebook
-      if User.find_by(email: request.env['omniauth.auth'].info.email)
-        @user = User.find_by(email: request.env['omniauth.auth'].info.email)
+      @user = User.find_by(email: request.env['omniauth.auth'].info.email)
+        if @user
         log_in(@user)
         redirect_to root_path
       else
