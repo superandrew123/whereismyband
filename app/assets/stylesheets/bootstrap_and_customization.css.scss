@@ -246,7 +246,9 @@ form#createBand {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
   padding: 0.5em;
   color: blue;
-  margin-left: 25.5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 1em;
 }
 #band_fb_slug {
   width: 100%;
@@ -277,5 +279,4 @@ form#createBand input {
   text-decoration: none;
   color: (0, 140, 186);
 }
-
 
