@@ -282,4 +282,17 @@ form#createBand input {
   text-decoration: none;
   color: (0, 140, 186);
 }
+.band-name::-webkit-input-placeholder
+{
+      color: rgba(255,255,255,1.0);  
+}
 
+.band-name::-moz-placeholder
+{
+      color: rgba(255,255,255,1.0);  
+}
+
+.band-name:-ms-input-placeholder
+{
+      color: rgba(255,255,255,1.0);  
+}
