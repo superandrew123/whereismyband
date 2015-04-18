@@ -7,8 +7,6 @@ class ApplicationController < ActionController::Base
   private 
 
   def log_in(user)
-    # Creates a key on session called :user_id
-    # and a value of the user account's id.
     session[:user_id] = user.id
   end
   helper_method :log_in

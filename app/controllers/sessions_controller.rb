@@ -27,7 +27,6 @@ class SessionsController < ApplicationController
         redirect_to root_path
       else
         @user = User.new
-        # flash[:notice] = "Please use a valid email/password"
         render :new
       end
     end
@@ -35,10 +34,8 @@ class SessionsController < ApplicationController
 
   def destroy
     # Sign the user out
-    # binding.pry
     reset_session
-    # binding.pry
-    # flash[:notice] = "Logged out!"
+
     redirect_to root_path
   end
 

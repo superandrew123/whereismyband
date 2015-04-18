@@ -1,6 +1,5 @@
 class SearchBands
 
-
   attr_accessor :band_params
  
   def initialize(band_params)
