@@ -23,12 +23,12 @@ class BandsController < ApplicationController
     # end
     # fb_slug = fb_slug.split(/[?\/]/)[0]
     begin
-
+      binding.pry
       fb_band = FbGraph::Page.fetch(fb_slug, :access_token => ENV["fb_access_token"])
       band_name = fb_slug.gsub("_"," ").gsub("-"," ")
       @band = Band.new(name: band_name, fb_slug: fb_slug, search_name: band_name.downcase)
       fb_band.events.each do |event|
-        @band.events << Event.find_or_create_by(location: event.name, start_time: event.start_time)
+        @band.events << Event.find_or_create_by(location: event.name, start_time: event.start_time, link: fb_params[:fb_slug])
       end
       @band.save
       @user.bands << @band
@@ -55,9 +55,8 @@ class BandsController < ApplicationController
     def fb_slug
       slug = fb_params[:fb_slug].split("com/")[1]
       if slug[0..5] == "pages/"
-        fb_slug = fb_slug[6..-1]
+        slug = slug[6..-1]
       end
       slug = slug.split(/[?\/]/)[0]
-
     end
 end
