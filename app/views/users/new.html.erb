@@ -1,5 +1,6 @@
 <!-- SIGNUP PAGE -->
-
+<div class="col-md-4"></div>
+<div class="col-md-4">
 <%= form_for @user do |f| %>
 	<% if @user.errors.any? %>
 		<div class="error_messages">
@@ -28,6 +29,7 @@
 	  <%= f.submit "Sign Up", class: "signUpSubmit" %>
 	 </div>
 	</div>
+</div>
 <% end %><br><br>
 
 
