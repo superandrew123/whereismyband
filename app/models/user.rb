@@ -38,6 +38,7 @@ class User < ActiveRecord::Base
       user.password = "dummy_password"
       user.password_confirmation = "dummy_password"
       user.save
+      user
       
   end
 
