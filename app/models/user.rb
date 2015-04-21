@@ -42,7 +42,7 @@ class User < ActiveRecord::Base
   end
 
   def greeting
-    greetings = ["Keep rockin, ", "sup, ", "yo, ", "Lookin good, ", "Greetings, ", "What's up, ", "Today is a good day to die, "]
+    greetings = ["Keep rockin, ", "sup, ", "yo, ", "Lookin good, ", "Greetings, ", "What's up, "]
     "#{greetings.sample}#{self.name}"
   end
 end
